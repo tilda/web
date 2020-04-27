@@ -1,18 +1,18 @@
 <template>
   <body>
     <div id="app">
-      <Rainbow text="~"/>
+      <Card/>
     </div>
   </body>
 </template>
 
 <script>
-import Rainbow from './components/Rainbow.vue'
+import Card from './components/Card'
 
 export default {
   name: 'App',
   components: {
-    Rainbow
+    Card
   }
 }
 </script>
