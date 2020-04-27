@@ -1,24 +1,16 @@
-# squiggletech-v2
+# web
+its my website
 
-## Project setup
-```
-npm install
-```
+# dev notes
+install deps: `npm install`
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+dev server: `npm run dev` or `npm run serve`
 
-### Compiles and minifies for production
-```
-npm run build
-```
+build: `npm run build`
 
-### Lints and fixes files
-```
-npm run lint
-```
+lint: `npm run lint`
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+this project uses vue cli
+
+# license
+MIT
