@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <body>
+    <div id="app">
+      <Rainbow text="~"/>
+    </div>
+  </body>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Rainbow from './components/Rainbow.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Rainbow
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "~roboto-mono-webfont/roboto-mono.min.css";
+body {
+  font: 16px/2 "Roboto Mono";
+  background-color: #2e3440; /* nord0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* thx slice :grin: */
 }
 </style>
