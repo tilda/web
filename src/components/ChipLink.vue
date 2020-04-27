@@ -1,6 +1,6 @@
 <template>
     <a :href="link">
-        <span class="chip ~info mb-1">{{ name }}</span>
+        <span class="chip ~info mb-1 px-2 py-1">{{ name }}</span>
     </a>
 </template>
 

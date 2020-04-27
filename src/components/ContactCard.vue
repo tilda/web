@@ -18,8 +18,9 @@
     --color-background: #2e3440; /* nord0 */
 }
 
-.chip {
-    padding-left: 5px;
+ChipLink {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 </style>

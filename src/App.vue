@@ -1,18 +1,18 @@
 <template>
   <body>
     <div id="app">
-      <Card/>
+      <ContactCard/>
     </div>
   </body>
 </template>
 
 <script>
-import Card from './components/Card'
+import ContactCard from './components/ContactCard'
 
 export default {
   name: 'App',
   components: {
-    Card
+    ContactCard
   }
 }
 </script>
