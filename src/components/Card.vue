@@ -1,21 +1,25 @@
 <template>
-    <section class="card ~neutral !normal content">
-        <img class="rounded-full mx-auto h-20 w-20 md:mr-6 mb-6" src="../assets/avy.png">
+    <div class="card ~neutral !normal md:flex max-w-lg">
+        <img class="rounded-full content-center mx-auto h-20 w-20 md:mr-6 mb-6" src="../assets/avy.png">
         <div class="flex-grow text-center md:text-left mb-0">
             <h4 class="heading my-0"><Rainbow text="tilda"/></h4>
-            <p class="mb-3 mt-2">hi, i'm a full stack developer from Denton, TX</p>
+            <p class="mb-3 mt-2">full stack dev</p>
             <div>
+                <ChipLink name="github" link="https://github.com/tilda"/>
                 <ChipLink name="twitter" link="https://twitter.com/imtilda"/>
+                <ChipLink name="osu!" link="https://osu.ppy.sh/users/tilda"/>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <style scoped>
-@import "~a17t/dist/a17t.css";
-
 :root {
     --color-background: #2e3440; /* nord0 */
+}
+
+.chip {
+    padding-left: 5px;
 }
 
 </style>

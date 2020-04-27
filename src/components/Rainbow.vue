@@ -5,7 +5,7 @@
 <style scoped>
     @import "~roboto-mono-webfont/roboto-mono.min.css";
     .rainbow {
-        font: 'Roboto Mono';
+        font-family: 'Roboto Mono';
         background: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
         animation: rainbow 5s ease infinite;
         -webkit-background-clip: text;
