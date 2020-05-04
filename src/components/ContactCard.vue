@@ -7,7 +7,6 @@
             <div>
                 <ChipLink name="github" link="https://github.com/tilda" style="padding-left: 0;"/>
                 <ChipLink name="twitter" link="https://twitter.com/imtilda"/>
-                <ChipLink name="osu!" link="https://osu.ppy.sh/users/tilda"/>
             </div>
         </div>
     </div>
