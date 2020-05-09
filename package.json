@@ -15,7 +15,8 @@
     "roboto-mono-webfont": "^2.0.986",
     "tailwindcss": "^1.3.5",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.6"
+    "vue-router": "^3.1.6",
+    "vue-unicons": "^2.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",

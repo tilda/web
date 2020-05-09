@@ -6,10 +6,6 @@
   </div>
 </template>
 
-<style scoped>
-.about { color: white; }
-</style>
-
 <script>
 import Rainbow from '@/components/Rainbow'
 import ChipLink from '@/components/ChipLink'
