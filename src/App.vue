@@ -1,21 +1,14 @@
 <template>
   <body>
     <div id="app">
-      <ContactCard/>
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </div>
+      <router-view/>
     </div>
   </body>
 </template>
-
-<script>
-import ContactCard from './components/ContactCard'
-
-export default {
-  name: 'App',
-  components: {
-    ContactCard
-  }
-}
-</script>
 
 <style>
 @import "~roboto-mono-webfont/roboto-mono.min.css";
@@ -27,7 +20,18 @@ body {
   justify-content: center;
   min-height: 100vh; /* thx slice :grin: */
 }
-:root {
-  --color-background: #3b4252; /* nord1 */
+
+#nav {
+  top: 0;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #e5e9f0;
+}
+
+#nav a.router-link-exact-active {
+  background-color: #eceff4;
+  color: black;
 }
 </style>

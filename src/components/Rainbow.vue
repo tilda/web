@@ -1,5 +1,5 @@
 <template>
-    <p class="rainbow">{{ text }}</p>
+    <span class="rainbow">{{ text }}</span>
 </template>
 
 <style scoped>
