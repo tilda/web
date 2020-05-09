@@ -22,7 +22,7 @@ body {
 }
 
 #nav {
-  top: 0;
+  padding-bottom: 10px;
 }
 
 #nav a {
