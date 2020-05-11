@@ -27,12 +27,10 @@ export default {
             let link = document.querySelector('.portal')
             if (this.dark === true) {
                 document.body.style.backgroundColor = '#2e3440'
-                app.style.backgroundColor = '#2e3440'
                 app.style.color = '#eceff4'
                 link.style.color = '#434c5e'
             } else {
                 document.body.style.backgroundColor = '#eceff4'
-                app.style.backgroundColor = '#eceff4'
                 app.style.color = '#2e3440'
                 link.style.color = '#434c5e'
             }

@@ -11,7 +11,10 @@
 
 <style>
 @import "~roboto-mono-webfont/roboto-mono.min.css";
-#app { font: 16px/2 "Roboto Mono"; }
+#app {
+  font: 16px/2 "Roboto Mono";
+  background-color: transparent;
+}
 body {
   background-color: #2e3440; /* nord0 */
   color: #eceff4;
