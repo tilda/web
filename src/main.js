@@ -5,9 +5,18 @@ import './assets/tailwind.css'
 import router from './router'
 import Unicon from 'vue-unicons'
 import { uniSun, uniMoon } from 'vue-unicons/src/icons'
+import KonamiCode from 'vue-konami-code'
+
 
 Unicon.add([uniSun, uniMoon])
 Vue.use(Unicon)
+
+Vue.use(KonamiCode, {
+  callback: function() {
+    // error.mdl
+    document.body.classList.add('funny')
+  }
+})
 
 Vue.config.productionTip = false
 

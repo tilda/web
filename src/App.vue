@@ -24,6 +24,11 @@ body {
   min-height: 100vh; /* thx slice :grin: */
 }
 
+body.funny {
+  background-image: url("./assets/poggers.png");
+  background-repeat: repeat;
+}
+
 #nav {
   padding-bottom: 10px;
 }

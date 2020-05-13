@@ -15,6 +15,7 @@
     "roboto-mono-webfont": "^2.0.986",
     "tailwindcss": "^1.3.5",
     "vue": "^2.6.11",
+    "vue-konami-code": "^1.0.0",
     "vue-router": "^3.1.6",
     "vue-unicons": "^2.1.0"
   },
