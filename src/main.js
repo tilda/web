@@ -6,6 +6,8 @@ import router from './router'
 import Unicon from 'vue-unicons'
 import { uniSun, uniMoon } from 'vue-unicons/src/icons'
 import KonamiCode from 'vue-konami-code'
+import Toast from 'vue-toastification'
+import "vue-toastification/dist/index.css"
 
 
 Unicon.add([uniSun, uniMoon])
@@ -16,6 +18,12 @@ Vue.use(KonamiCode, {
     // error.mdl
     document.body.classList.add('funny')
   }
+})
+
+Vue.use(Toast, {
+  transition: "Vue-Toastification__fade",
+  maxToasts: 5,
+  newestOnTop: true
 })
 
 Vue.config.productionTip = false

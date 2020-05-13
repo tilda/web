@@ -34,7 +34,10 @@ export default {
                 app.style.color = '#2e3440'
                 link.style.color = '#434c5e'
             }
-            
+            this.$toast.success(`Switched to ${this.dark ? 'dark mode' : 'light mode'}`,
+            {
+                timeout: 2000
+            })            
         }
     }
 }
