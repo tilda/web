@@ -7,8 +7,7 @@ import Unicon from 'vue-unicons'
 import { uniSun, uniMoon } from 'vue-unicons/src/icons'
 import KonamiCode from 'vue-konami-code'
 import Toast from 'vue-toastification'
-import "vue-toastification/dist/index.css"
-
+import './assets/toastification.css'
 
 Unicon.add([uniSun, uniMoon])
 Vue.use(Unicon)
