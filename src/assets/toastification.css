@@ -1,6 +1,7 @@
 /* NOTE: THIS FILE IS ORIGINALLY TAKEN FROM vue-toastification */
 /* vue-toastification is licensed under the MIT license */
 
+/* purgecss start ignore */
 .Vue-Toastification__container {
   z-index: 9999;
   position: fixed;
@@ -546,3 +547,5 @@
   transition-timing-function: ease-in-out;
   transition-property: all;
   transition-duration: 400ms; }
+
+/* purgecss end ignore */
