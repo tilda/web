@@ -1,3 +1,4 @@
+<!-- <a class=".tooltip">this is a placeholder so that purgecss stops being dumb</a> -->
 <template>
     <div class="card ~neutral !normal md:flex max-w-lg shadow-2xl">
         <a href="https://www.pixiv.net/en/artworks/78784366" v-tooltip="{ content: 'Art by @ahppple' }">
