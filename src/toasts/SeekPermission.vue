@@ -39,7 +39,7 @@ a:visited {
 </style>
 
 <script>
-import { injectAnalytics } from "../utils/analytics";
+import injectAnalytics from '../utils/analytics'
 import PermissionGranted from "./PermissionGranted";
 import PermissionDenied from "./PermissionDenied";
 
@@ -49,7 +49,7 @@ export default {
             this.$emit('close-toast')
         },
         permit: function() {
-            injectAnalytics();
+            injectAnalytics()
             window.localStorage.setItem("analytics", true);
             this.$toast.success(PermissionGranted, {
                 position: "bottom-center"

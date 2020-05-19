@@ -28,6 +28,8 @@ Vue.use(VTooltip)
 
 Vue.config.productionTip = false
 
+Vue.prototype.$analyticsScript = document.getElementById('shynet')
+
 new Vue({
   router,
   render: h => h(App)

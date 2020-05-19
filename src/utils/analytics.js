@@ -1,4 +1,4 @@
-let script = document.createElement('script')
+let script = document.getElementById('shynet')
 
 const injectAnalytics = function() {
     script.src = 'https://shy.tda.wtf/ingress/ea409a8c-c531-42bd-af6d-5f44c32ab6d8/script.js'

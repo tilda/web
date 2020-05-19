@@ -54,14 +54,17 @@ body.funny {
 <script>
 import ThemeSwitcher from "@/components/ThemeSwitcher"
 import SeekPermission from "@/toasts/SeekPermission"
+import injectAnalytics from '@/utils/analytics'
 
 export default {
     components: {
         ThemeSwitcher,
     },
     mounted: function() {
-        if (window.localStorage.getItem('analytics') === null) {
+        if (localStorage.getItem('analytics') === null) {
             this.analytics()
+        } else if (localStorage.getItem('analytics') === true) {
+            injectAnalytics(document.createElement('script'))
         }
     },
     methods: {
@@ -72,6 +75,9 @@ export default {
                 closeOnClick: false,
                 closeButton: false
             })
+        },
+        injectAnalytics: function(el) {
+            el.src = 'https://shy.tda.wtf/ingress/ea409a8c-c531-42bd-af6d-5f44c32ab6d8/script.js'
         }
     }
 }
