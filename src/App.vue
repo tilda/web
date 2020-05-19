@@ -1,11 +1,17 @@
 <template>
     <div id="app">
-      <div id="nav">
-        <span class="portal"><router-link to="/">Home</router-link></span>
-        <span class="portal"><router-link to="/about">About</router-link></span>
-        <span class="portal"><ThemeSwitcher/></span>
-      </div>
-      <router-view/>
+        <div id="nav">
+            <span class="portal">
+                <router-link to="/">Home</router-link>
+            </span>
+            <span class="portal">
+                <router-link to="/about">About</router-link>
+            </span>
+            <span class="portal">
+                <ThemeSwitcher />
+            </span>
+        </div>
+        <router-view />
     </div>
 </template>
 
@@ -22,6 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* thx slice :grin: */
+  min-width: 100vw;
 }
 
 body.funny {
@@ -45,11 +52,27 @@ body.funny {
 </style>
 
 <script>
-import ThemeSwitcher from '@/components/ThemeSwitcher'
+import ThemeSwitcher from "@/components/ThemeSwitcher"
+import SeekPermission from "@/toasts/SeekPermission"
 
 export default {
-  components: {
-    ThemeSwitcher
-  }  
+    components: {
+        ThemeSwitcher,
+    },
+    mounted: function() {
+        if (window.localStorage.getItem('analytics') === null) {
+            this.analytics()
+        }
+    },
+    methods: {
+        analytics: function() {
+            this.$toast(SeekPermission, {
+                timeout: false,
+                position: "bottom-center",
+                closeOnClick: false,
+                closeButton: false
+            })
+        }
+    }
 }
 </script>
