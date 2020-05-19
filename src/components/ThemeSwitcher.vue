@@ -20,6 +20,13 @@ export default {
             dark: true
         }
     },
+    mounted() {
+        if (localStorage.getItem('dark') === null) {
+            localStorage.setItem('dark', true)
+        } else {
+            this.dark = localStorage.getItem('dark')
+        }
+    },
     methods: {
         switchColorScheme: function() {
             this.dark = !this.dark

@@ -73,7 +73,8 @@ export default {
                 timeout: false,
                 position: "bottom-center",
                 closeOnClick: false,
-                closeButton: false
+                closeButton: false,
+                draggable: false
             })
         },
         injectAnalytics: function(el) {
