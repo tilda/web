@@ -12,8 +12,20 @@
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>this website is built with technologies that only work with javascript enabled</strong>
+      <p>to enable javascript, see <a href="https://enable-javascript.com/">this guide</a>.</p>
+      <br>
+      <small>sorry for the inconvenience.</small>
     </noscript>
+    <style>
+      noscript {
+        z-index: 9999;
+        background-color: #2e3440;
+        color: #d8dee9;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

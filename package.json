@@ -18,6 +18,7 @@
     "vue": "^2.6.11",
     "vue-konami-code": "^1.0.0",
     "vue-router": "^3.1.6",
+    "vue-shynet": "^1.0.1",
     "vue-toastification": "^1.7.1",
     "vue-unicons": "^2.1.0"
   },

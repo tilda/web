@@ -10,6 +10,7 @@ import Toast from 'vue-toastification'
 import './assets/toastification.css'
 import VTooltip from 'v-tooltip'
 import './assets/tooltips.css'
+import Shynet from 'vue-shynet'
 
 Unicon.add([uniSun, uniMoon, uniCog])
 Vue.use(Unicon)
@@ -25,10 +26,9 @@ Vue.use(Toast, {
   newestOnTop: true
 })
 Vue.use(VTooltip)
+Vue.use(Shynet, 'https://shy.tda.wtf/ingress/ea409a8c-c531-42bd-af6d-5f44c32ab6d8/script.js')
 
 Vue.config.productionTip = false
-
-Vue.prototype.$analyticsScript = document.getElementById('shynet')
 
 new Vue({
   router,
