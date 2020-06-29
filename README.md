@@ -1,16 +1,24 @@
-# web
-its my website
+# tilda-site
 
-# dev notes
-install deps: `npm install`
+## Project setup
+```
+npm install
+```
 
-dev server: `npm run dev` or `npm run serve`
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-build: `npm run build`
+### Compiles and minifies for production
+```
+npm run build
+```
 
-lint: `npm run lint`
+### Lints and fixes files
+```
+npm run lint
+```
 
-this project uses vue cli
-
-# license
-MIT
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
