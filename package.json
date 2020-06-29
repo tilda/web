@@ -10,8 +10,10 @@
   "dependencies": {
     "a17t": "^0.1.4",
     "core-js": "^3.6.5",
+    "roboto-mono-webfont": "^2.0.986",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
+    "vue-router": "^3.2.0",
+    "vue-unicons": "^2.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
