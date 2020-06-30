@@ -15,16 +15,13 @@
         </ul>
         <div class="md:w-5/12 md:text-right flex items-center md:justify-end">
           <ThemeSwitcher/>
+          <a href="https://github.com/tilda/web" title="View this website's source on GitHub">
+            <Unicon width="24" height="24" name="github" :fill="iconColor" class="mr-6"/>
+          </a>
         </div>
       </header>
     </div>
     <router-view/>
-    <footer class="md:flex justify-between text-sm">
-      <span>made using <a href="https://vuejs.org">Vue.js</a> and <a href="https://a17t.miles.land">a17t</a></span>
-      <a href="https://github.com/tilda/web" title="View this website's source on GitHub">
-        <Unicon width="24" height="24" name="github" :fill="iconColor" class="mr-6"/>
-      </a>
-    </footer>
   </div>
 </template>
 

@@ -37,10 +37,6 @@ a:link {
     text-decoration: none;
 }
 
-footer {
-    vertical-align: middle;
-}
-
 .rainbow {
     background: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
     animation: rainbow 5s ease infinite;
