@@ -3,10 +3,8 @@
         <ul>
             <li v-for="lang in stats" :key="[lang[1].xps, lang[0]]">
                 <br>
-                <span class="subheading text-lg md:text-xl mb-6">
-                    {{ lang[0] }}
-                </span>
-                <span> {{ lang[1].xps }} </span>
+                <span class="subheading text-lg md:text-xl mb-6">{{ lang[0] }}</span>
+                <span>{{ lang[1].xps }} characters</span>
                 <br>
             </li>
         </ul>
