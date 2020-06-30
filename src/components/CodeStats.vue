@@ -5,7 +5,7 @@
         <ul>
             <li v-for="lang in stats" :key="[lang[1].xps, lang[0]]">
                 <span class="subheading text-lg mb-5 language-name">{{ lang[0] }}</span>
-                <span> {{ lang[1].xps }} characters</span>
+                <span class="pb-4"> {{ lang[1].xps }} characters</span>
                 <br>
             </li>
         </ul>
