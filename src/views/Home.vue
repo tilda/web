@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="md:flex md:mt-24 mb-24 items-center justify-between">
-      <section class="md:w-5/12 items-center content-center">
+      <section class="md:w-6/12 items-center content-center">
         <a class="content-center mx-auto md:mr-6 mb-6">
             <img src="../assets/avy.png" title="Art by @ahppple (Twitter)" alt="Fan art of Rin Shima from Yuru Camp looking at viewer" class="rounded-full content-center mx-auto h-48 w-48">
         </a>
