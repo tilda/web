@@ -6,6 +6,15 @@ span.switcher:hover {
     user-select: none;
 }
 
+#codestats {
+    max-height: 350px;
+    overflow: auto;
+}
+
+.language-name {
+    font-weight: bold;
+}
+
 .rainbow {
     background: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
     animation: rainbow 5s ease infinite;
@@ -28,6 +37,7 @@ span.switcher:hover {
     font-size: 1.2rem !important;
 }
 
+/* dark theme */
 .dark {
     background-color: #2e3440;
     color: #d8dee9;
@@ -41,6 +51,17 @@ span.switcher:hover {
 .dark #nav a.router-link-exact-active {
     border: 1.5px solid #eceff4;
 }
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: #434c5e;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4c566a;
+}
+
+/* light theme */
 .light {
     background-color: #eceff4;
     color: #2e3440;
