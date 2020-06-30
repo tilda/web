@@ -59,6 +59,10 @@ a:link {
     font-size: 1.2rem !important;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 /* dark theme */
 .dark {
     background-color: #2e3440;

@@ -9,7 +9,7 @@
             </a>
           </h3>
         </div>
-        <ul class="align-baseline block flex-wrap md:flex md:items-center flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden md:bg-transparent md:shadow-none md:p-0">
+        <ul class="align-baseline block flex-wrap md:flex md:items-center flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg md:bg-transparent md:shadow-none md:p-0">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About Me</router-link></li>
         </ul>
