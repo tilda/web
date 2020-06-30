@@ -11,7 +11,7 @@
         </div>
         <ul class="align-baseline block flex-wrap md:flex md:items-center flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden md:bg-transparent md:shadow-none md:p-0">
           <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/about">About Me</router-link></li>
         </ul>
         <div class="md:w-5/12 md:text-right flex items-center md:justify-end">
           <ThemeSwitcher/>

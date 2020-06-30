@@ -24,7 +24,7 @@ export default {
         }
     },
     mounted() {
-        axios.get('https://codestats.net/api/users/tda').then(response => (this.stats = Object.entries(response.data.languages)))
+        axios.get('https://codestats.net/api/users/tda').then(response => (this.stats = Object.entries(response.data.languages).sort((a, b) => b[1].xps - a[1].xps)))
     }
     
 }
