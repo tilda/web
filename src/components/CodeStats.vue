@@ -1,6 +1,15 @@
 <template>
     <div id="stats">
-        <b>{{ stats }}</b>
+        <ul>
+            <li v-for="lang in stats" :key="[lang[1].xps, lang[0]]">
+                <br>
+                <span class="subheading text-lg md:text-xl mb-6">
+                    {{ lang[0] }}
+                </span>
+                <span> {{ lang[1].xps }} </span>
+                <br>
+            </li>
+        </ul>
         <br><small>Sorted in order of usage</small>
     </div>
 </template>
@@ -15,8 +24,7 @@ export default {
         }
     },
     mounted() {
-        axios.get('https://codestats.net/api/users/tda').then(response => (this.stats = response.data.languages))
-
+        axios.get('https://codestats.net/api/users/tda').then(response => (this.stats = Object.entries(response.data.languages)))
     }
     
 }
