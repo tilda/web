@@ -7,6 +7,7 @@ import { uniSun, uniMoon, uniGithub } from 'vue-unicons/src/icons'
 import Unicon from 'vue-unicons'
 import store from './store'
 import 'roboto-mono-webfont'
+import './assets/theming.css'
 
 Unicon.add([uniSun, uniMoon, uniGithub])
 
