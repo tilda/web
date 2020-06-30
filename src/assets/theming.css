@@ -13,6 +13,11 @@ span.switcher:hover {
     z-index: 5;
 }
 
+.switcher {
+    margin: 0;
+    padding: 0;
+}
+
 #codestats {
     min-height: 330px;
     max-height: 330px;
