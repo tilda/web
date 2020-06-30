@@ -6,9 +6,18 @@ span.switcher:hover {
     user-select: none;
 }
 
+#nav {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    z-index: 5;
+}
+
 #codestats {
+    min-height: 350px;
     max-height: 350px;
     overflow: auto;
+    padding-top: 5px;
 }
 
 .language-name {
@@ -48,7 +57,7 @@ span.switcher:hover {
 .dark #nav a, .dark .heading {
     color: #e5e9f0;
 }
-.dark #nav a.router-link-exact-active {
+.dark #nav a.router-link-exact-active, .dark #codestats {
     border: 1.5px solid #eceff4;
 }
 ::-webkit-scrollbar {
@@ -66,6 +75,6 @@ span.switcher:hover {
     background-color: #eceff4;
     color: #2e3440;
 }
-.light #nav a.router-link-exact-active {
+.light #nav a.router-link-exact-active, .light #codestats {
     border: 1.5px solid #434c5e;
 }
