@@ -1,5 +1,5 @@
 <template>
-    <span @click="switchTheme" class="switcher">
+    <span @click="switchTheme" class="switcher align-baseline">
         <unicon v-if="this.$store.state.dark" name="sun" fill="white" aria-label="Switch to light mode"/>
         <unicon v-else name="moon" fill="black" aria-label="Switch to dark mode"/>
     </span>
