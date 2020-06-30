@@ -1,14 +1,14 @@
 <template>
-    <div id="stats">
+    <div id="codestats">
+        <h2 class="subheading text-lg md:text-xl">Sorted in order of usage:</h2>
         <ul>
             <li v-for="lang in stats" :key="[lang[1].xps, lang[0]]">
                 <br>
-                <span class="subheading text-lg md:text-xl mb-6">{{ lang[0] }}</span>
+                <span class="subheading text-lg mb-6 language-name">{{ lang[0] }}</span>
                 <span> {{ lang[1].xps }} characters</span>
                 <br>
             </li>
         </ul>
-        <br><small>Sorted in order of usage</small>
     </div>
 </template>
 
