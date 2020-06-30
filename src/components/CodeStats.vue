@@ -5,7 +5,7 @@
         <ul>
             <li v-for="lang in stats" :key="[lang[1].xps, lang[0]]">
                 <span class="subheading text-lg mb-5 language-name">{{ lang[0] }}</span>
-                <span class="pb-4"> {{ lang[1].xps.toLocaleString() }} characters</span>
+                <span class="pb-4"> {{ lang[1].xps | humanize }} characters</span>
                 <br>
             </li>
         </ul>
@@ -20,6 +20,11 @@ export default {
         return {
             stats: null,
             loadingStats: true
+        }
+    },
+    filters: {
+        humanize: function(number) {
+            return number.toLocaleString()
         }
     },
     mounted() {
