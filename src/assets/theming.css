@@ -14,8 +14,8 @@ span.switcher:hover {
 }
 
 #codestats {
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 330px;
+    max-height: 330px;
     overflow: auto;
     padding-top: 5px;
 }
