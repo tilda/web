@@ -9,7 +9,15 @@
             </a>
           </h3>
         </div>
-        <ul class="align-baseline block flex-wrap md:flex md:items-center flex-grow shadow-lg py-4 px-2 md:p-0">
+        <div class="block md:hidden">
+          <button class="flex items-center px-3 py-3 text-gray-700 hover:text-gray-900" onclick="document.querySelector('#navButtons').classList.toggle('hidden')">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div> 
+        <ul id="navButtons" class="align-baseline block flex-wrap md:flex md:items-center flex-grow shadow-lg py-4 px-2 md:p-0 hidden md:bg-transparent md:shadow-none">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About Me</router-link></li>
         </ul>
