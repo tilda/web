@@ -5,12 +5,12 @@
         <div class="mr-6">
           <h3 class="text-2xl ~urge !low">
             <a class="flex items-center logo">
-              <span class="rainbow">tilda</span>
+              <span class="rainbow"><router-link to="/">tilda</router-link></span>
             </a>
           </h3>
         </div>
         <div class="block md:hidden">
-          <button class="flex items-center px-3 py-3 text-gray-700 hover:text-gray-900" onclick="document.querySelector('#navButtons').classList.toggle('hidden')">
+          <button class="flex items-center px-3 py-3 text-gray-700 hover:text-gray-900" title="Menu" onclick="document.querySelector('#navButtons').classList.toggle('hidden')">
             <Unicon width="20" height="20" name="bars" :fill="iconColor"/>
           </button>
         </div> 
