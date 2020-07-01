@@ -5,7 +5,7 @@ span.switcher:hover {
 
 .logo {
     user-select: none;
-    border: none;
+    border: none !important;
 }
 
 #nav {
