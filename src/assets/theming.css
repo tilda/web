@@ -5,7 +5,6 @@ span.switcher:hover {
 
 .logo {
     user-select: none;
-    border: none !important;
 }
 
 #nav {
@@ -69,6 +68,9 @@ body {
     scroll-behavior: smooth;
 }
 
+#nav > header > div.mr-6 > h3 > a > span > a { /* Chrome gave me this selector I hope it works */
+    border: none !important;
+}
 /* dark theme */
 .dark {
     background-color: #2e3440;
