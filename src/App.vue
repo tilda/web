@@ -14,7 +14,7 @@
             <Unicon width="20" height="20" name="bars" :fill="iconColor"/>
           </button>
         </div> 
-        <ul id="navButtons" class="align-baseline block flex-wrap md:flex md:items-center flex-grow shadow-lg py-4 px-2 md:p-0 hidden md:bg-transparent md:shadow-none">
+        <ul id="navButtons" class="align-baseline sm:block flex-wrap md:flex md:items-center flex-grow py-4 px-2 md:p-0 hidden md:bg-transparent">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About Me</router-link></li>
         </ul>
