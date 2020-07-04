@@ -73,19 +73,18 @@ export default {
 @import "./assets/theming.css";
 
 #app {
-  font-family: 'Roboto Mono', monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
 }
 
 #nav li {
-  padding-right: 15px;
+    padding-right: 15px;
 }
 
 #nav a {
-  font-weight: bold;
-  padding: 5px;
+    font-weight: bold;
+    padding: 5px;
 }
-
 </style>
