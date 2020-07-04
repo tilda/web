@@ -6,7 +6,7 @@
             <li v-for="lang in stats" :key="[lang[1].xps, lang[0]]">
                 <span class="subheading text-lg mb-5 language-name">{{ lang[0] }}</span>
                 <span v-if="fluent(lang[0])" class="ml-1" title="I consider myself fluent in this language">
-                    <Unicon name="favorite" fill="gold" width="16" height="16"/>
+                    <Unicon name="favorite" fill="gold" width="16" height="16" icon-style="monochrome"/>
                 </span>
                 <span class="pb-4"> {{ lang[1].xps | humanize }} characters</span>
                 <br>
