@@ -3,17 +3,6 @@ span.switcher:hover {
     cursor: pointer;
 }
 
-.logo {
-    user-select: none;
-}
-
-#nav {
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(5px);
-    z-index: 5;
-}
-
 .switcher {
     margin: 0;
     padding: 0;
@@ -21,14 +10,6 @@ span.switcher:hover {
 
 a:link {
     text-decoration: underline;
-}
-
-#nav a:link {
-    text-decoration: none;
-}
-
-#nav li {
-    display: inline;
 }
 
 .rainbow {
