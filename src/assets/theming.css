@@ -19,17 +19,6 @@ span.switcher:hover {
     padding: 0;
 }
 
-#codestats {
-    min-height: 330px;
-    max-height: 330px;
-    overflow: auto;
-    padding-top: 5px;
-}
-
-.language-name {
-    font-weight: bold;
-}
-
 a:link {
     text-decoration: underline;
 }
