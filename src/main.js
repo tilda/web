@@ -3,13 +3,13 @@ import App from './App.vue'
 import router from './router'
 import 'a17t'
 import './assets/tailwind.css'
-import { uniSun, uniMoon, uniGithub, uniBars } from 'vue-unicons/src/icons'
+import { uniSun, uniMoon, uniGithub, uniBars, uniFavorite } from 'vue-unicons/src/icons'
 import Unicon from 'vue-unicons'
 import store from './store'
 import 'roboto-mono-webfont'
 import './assets/theming.css'
 
-Unicon.add([uniSun, uniMoon, uniGithub, uniBars])
+Unicon.add([uniSun, uniMoon, uniGithub, uniBars, uniFavorite])
 
 Vue.use(Unicon)
 
