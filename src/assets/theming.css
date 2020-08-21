@@ -36,6 +36,7 @@ a:link {
 
 body {
     scroll-behavior: smooth;
+    scrollbar-color: #4c566a #434c5e;
 }
 
 #nav > header > div.mr-6 > h3 > a > span > a { /* Chrome gave me this selector I hope it works */
