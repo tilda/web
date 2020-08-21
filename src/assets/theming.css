@@ -36,6 +36,7 @@ a:link {
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
 }
 
 #nav > header > div.mr-6 > h3 > a > span > a { /* Chrome gave me this selector I hope it works */
@@ -46,7 +47,6 @@ html {
     background-color: #2e3440;
     color: #d8dee9;
     scrollbar-color: #4c566a #434c5e;
-    scrollbar-width: thin;
 }
 .dark .about, .dark .home, .dark .subheading {
     color: #d8dee9;
@@ -72,7 +72,6 @@ html {
     background-color: #eceff4;
     color: #2e3440;
     scrollbar-color: #e5e9f0 #d8dee9;
-    scrollbar-width: thin;
 }
 .light #nav a.router-link-exact-active, .light #codestats {
     border: 1.5px solid #434c5e;
