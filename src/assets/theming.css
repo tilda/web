@@ -34,7 +34,7 @@ a:link {
     font-size: 1.2rem !important;
 }
 
-body {
+#app {
     scroll-behavior: smooth;
     scrollbar-color: #4c566a #434c5e;
     scrollbar-width: 15px;
