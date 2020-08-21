@@ -47,6 +47,8 @@ html {
 .dark {
     background-color: #2e3440;
     color: #d8dee9;
+    scrollbar-color: #4c566a #434c5e;
+    scrollbar-width: thin;
 }
 .dark .about, .dark .home, .dark .subheading {
     color: #d8dee9;
@@ -60,10 +62,10 @@ html {
 ::-webkit-scrollbar {
     width: 15px;
 }
-::-webkit-scrollbar-track {
+.dark::-webkit-scrollbar-track {
     background-color: #434c5e;
 }
-::-webkit-scrollbar-thumb {
+.dark::-webkit-scrollbar-thumb {
     background-color: #4c566a;
 }
 
@@ -71,8 +73,16 @@ html {
 .light {
     background-color: #eceff4;
     color: #2e3440;
+    scrollbar-color: #e5e9f0 #d8dee9;
+    scrollbar-width: thin;
 }
 .light #nav a.router-link-exact-active, .light #codestats {
     border: 1.5px solid #434c5e;
+}
+.light::-webkit-scrollbar-track {
+    background-color: #d8dee9;
+}
+.light::-webkit-scrollbar-thumb {
+    background-color: #e5e9f0;
 }
 /* purgecss end ignore */
