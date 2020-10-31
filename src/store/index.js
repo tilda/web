@@ -19,8 +19,7 @@ export default new Vuex.Store({
   mutations: {
     switchTheme(state) {
       state.dark = !state.dark
-      document.body.classList.remove((state.dark ? 'light' : 'dark'))
-      document.body.classList.add((state.dark ? 'dark' : 'light'))
+      document.body.classList.replace((state.dark ? 'light' : 'dark'), (state.dark ? 'dark' : 'light'))
     }
   },
   actions: {
