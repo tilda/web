@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a :href="method.url" class="text-decoration-important">
+        <a :href="method.url" target="_blank" class="text-decoration-important block">
             <div class="flex max-w-lg rounded shadow-lg hover:shadow-xl vertical-align-important" :style="{ 'background-color': method.color }">
                 <div class="mx-4 p-4 border-r-4 border-white">
                     <svg role="img" class="h-12 w-12" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
