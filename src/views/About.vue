@@ -27,7 +27,7 @@ import CodeStats from '../components/CodeStats'
 
 export default {
     components: {
-      CodeStats
+        CodeStats
     }  
 }
 </script>
