@@ -1,16 +1,10 @@
 /* eslint-disable no-unused-vars */
 export default [
     {
-        "name": "Code::Stats",
-        "icon": "wakatime", // lol
-        "color": "#000000",
-        "url": "https://codestats.net/users/tda"
-    },
-    {
         "name": "Discord",
         "icon": "discord",
         "color": "#7298da",
-        "url": "javascript:void(0)"
+        "url": "javascript:void(0)" // todo
     },
     {
         "name": "GitHub",
