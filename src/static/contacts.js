@@ -1,12 +1,6 @@
 /* eslint-disable no-unused-vars */
 export default [
     {
-        "name": "Discord",
-        "icon": "discord",
-        "color": "#7298da",
-        "url": "javascript:void(0)" // todo
-    },
-    {
         "name": "GitHub",
         "icon": "github",
         "color": "#181717",
