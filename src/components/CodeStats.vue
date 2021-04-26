@@ -1,5 +1,5 @@
 <template>
-    <div id="codestats">
+    <div id="codestats" class="shadow-md hover:shadow-lg">
         <h2 class="subheading text-lg md:text-xl">Sorted in order of usage:</h2>
         <b v-if="loadingStats">Loading stats, give me a moment</b>
         <ul>
