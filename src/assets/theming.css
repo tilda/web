@@ -1,4 +1,20 @@
 /* purgecss start ignore */
+:root {
+    /* dark vars */
+    --dark-bg: #2e3440;
+    --dark-heading: #e5e9f0;
+    --dark-text: #d8dee9;
+    --dark-scrollbar-thumb: #4c566a;
+    --dark-scrollbar-track: #434c5e;
+    --dark-border: #eceff4;
+    /* light vars */
+    --light-bg: #eceff4;
+    --light-text: #2e3440;
+    --light-scrollbar-thumb: #e5e9f0;
+    --light-scrollbar-track: #d8dee9;
+    --light-border: #434c5e;
+}
+
 span.switcher:hover {
     cursor: pointer;
 }
@@ -44,42 +60,43 @@ html {
 }
 /* dark theme */
 .dark {
-    background-color: #2e3440;
-    color: #d8dee9;
-    scrollbar-color: #4c566a #434c5e;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    scrollbar-color: var(--dark-scrollbar-thumb) var(--dark-scrollbar-track);
 }
+/* TODO: are these color statements really necessary? */
 .dark .about, .dark .home, .dark .subheading {
-    color: #d8dee9;
+    color: var(--dark-text);
 }
 .dark #nav a, .dark .heading {
-    color: #e5e9f0;
+    color: var(--dark-heading);
 }
 .dark #nav a.router-link-exact-active, .dark #codestats {
-    border: 1.5px solid #eceff4;
+    border: 1.5px solid var(--dark-border);
 }
 ::-webkit-scrollbar {
     width: 15px;
 }
 .dark::-webkit-scrollbar-track {
-    background-color: #434c5e;
+    background-color: var(--dark-scrollbar-track);
 }
 .dark::-webkit-scrollbar-thumb {
-    background-color: #4c566a;
+    background-color: var(--dark-scrollbar-thumb);
 }
 
 /* light theme */
 .light {
-    background-color: #eceff4;
-    color: #2e3440;
-    scrollbar-color: #e5e9f0 #d8dee9;
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    scrollbar-color: var(--light-scrollbar-thumb) var(--light-scrollbar-track);
 }
 .light #nav a.router-link-exact-active, .light #codestats {
-    border: 1.5px solid #434c5e;
+    border: 1.5px solid var(--light-border);
 }
 .light::-webkit-scrollbar-track {
-    background-color: #d8dee9;
+    background-color: var(--light-scrollbar-track);
 }
 .light::-webkit-scrollbar-thumb {
-    background-color: #e5e9f0;
+    background-color: var(--light-scrollbar-thumb);
 }
 /* purgecss end ignore */
