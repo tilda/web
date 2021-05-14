@@ -13,7 +13,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "roboto-mono-webfont": "^2.0.986",
-    "simple-icons": "^3.12.2",
+    "simple-icons": "^4.23.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-tooltip": "^0.1.0",
