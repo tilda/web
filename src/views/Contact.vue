@@ -8,9 +8,9 @@
                 <h2 class="subheading text-md md:text-xl mb-6">
                     If you need to get ahold of me, here's how you do it.
                 </h2>
-                <div v-for="method in this.methods" :key="[method]">
+                <span class="flex flex-column items-center" v-for="method in this.methods" :key="[method]">
                     <ContactMethod :method="method"/>
-                </div>
+                </span>
             </section>
         </div>
     </div>
@@ -23,14 +23,11 @@ import contacts from '../static/contacts'
 export default {
     data() {
         return {
-            methods: null
+            methods: contacts
         }
     },
     components: {
         ContactMethod
-    },
-    mounted() {
-        this.methods = contacts
-    }    
+    }
 }
 </script>
