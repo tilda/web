@@ -14,8 +14,8 @@
                 </h1>
                 <h2 class="subheading text-lg md:text-xl">
                     Welcome to my home on the internet.<br/>
-                    Feel free to browse the pages,<br/>
-                    after all they're made for that.
+                    If you're new here, try the<br/>
+                    <router-link to="/about">About</router-link> page ;)
                 </h2>
             </section>
         </div>
