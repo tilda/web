@@ -12,7 +12,7 @@
         </div>
         <div class="md:flex md:mt-24 mb-24 items-center justify-between">
             <section class="md:w-full mb-4 mt-6 mr-6">
-                <h1 class="heading text-lg md:text-3xl">A couple of facts about myself</h1>
+                <h1 class="heading text-lg md:text-3xl">A couple of facts about myself!</h1>
                 <h2 class="subheading text-md md:text-xl mb-6">(I mean if you're here, you might as well get to know me a bit)</h2>
                 <ul>
                     <li>My pronouns are he/him (or they/them)!</li>
