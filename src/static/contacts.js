@@ -15,15 +15,13 @@ export default [
     {
         // SIDENOTE: this is called last.fm in the object
         // but that doesn't work when you're using require so oops
-        "icon": "last-dot-fm",
+        "icon": "lastdotfm",
         "url": "https://last.fm/imtilda"
     },
-    /* {
+    {
         "icon": "osu",
         "url": "https://osu.ppy.sh/users/6233296"
-    }, */    
-    // REM: Uncomment ^ when simple-icons
-    // does a new release with this icon
+    },
     {
         "icon": "steam",
         "url": "https://steamcommunity.com/id/thonker"
