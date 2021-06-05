@@ -1,13 +1,13 @@
 <template>
     <div class="mb-2">
-        <input id="aaghh" class="rainbow text-xl md:text-4xl" type="text" @click="copy" :value="text" readonly>
+        <input :id="text" class="rainbow text-xl md:text-4xl pain" type="text" @click="copy" :value="text" readonly>
         <br/>
         <small id="affirm">Click to copy!</small>
     </div>
 </template>
 
 <style scoped>
-    #aaghh {
+    .pain {
         background-color: transparent;
         text-align: center;
         cursor: pointer;
@@ -24,7 +24,7 @@ export default {
     },
     methods: {
         copy: function() {
-            const the = document.getElementById('aaghh')
+            const the = document.getElementById(this.text)
             const p = document.getElementById('affirm')
             the.select()
             the.setSelectionRange(0, 99999) // the joys of mobile!
