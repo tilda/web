@@ -1,9 +1,9 @@
 <template>
     <div id="app" class="max-w-screen-lg mx-auto px-6 py-4 md:px-4 md:py-10">
-        <div class="relative" id="nav">
+        <div class="relative mb-8" id="nav">
             <header class="flex items-center flex-wrap justify-between">
                 <div class="mr-6">
-                    <h3 class="text-2xl ~urge !low">
+                    <h3 class="text-2xl">
                         <a class="flex items-center logo">
                             <span class="rainbow"><router-link to="/">tilda</router-link></span>
                         </a>
