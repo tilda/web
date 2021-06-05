@@ -2,7 +2,7 @@
     <div class="mb-2">
         <input :id="text" class="rainbow text-xl md:text-4xl pain" type="text" @click="copy" :value="text" readonly>
         <br/>
-        <small id="affirm">Click to copy!</small>
+        <small :id="text + '2'">Click to copy!</small>
     </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
     methods: {
         copy: function() {
             const the = document.getElementById(this.text)
-            const p = document.getElementById('affirm')
+            const p = document.getElementById(this.text + '2')
             the.select()
             the.setSelectionRange(0, 99999) // the joys of mobile!
             document.execCommand("copy")
