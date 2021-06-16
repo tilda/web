@@ -13,6 +13,8 @@
     --light-scrollbar-thumb: #e5e9f0;
     --light-scrollbar-track: #d8dee9;
     --light-border: #434c5e;
+    /* gradient */
+    --gradient: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
 }
 
 span.switcher:hover {
@@ -29,12 +31,23 @@ a:link {
 }
 
 .rainbow {
-    background: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
+    background: var(--gradient);
     animation: rainbow 5s ease infinite;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media (prefers-reduced-motion) {
+    .rainbow {
+        background: var(--gradient);
+        animation: none;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 /* Shamelessly stolen from a random codepen, but I don't think they would care. */
 @keyframes rainbow { 
     from { filter: hue-rotate(0deg); }
