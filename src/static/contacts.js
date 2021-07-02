@@ -16,7 +16,7 @@ export default [
         // SIDENOTE: this is called last.fm in the object
         // but that doesn't work when you're using require so oops
         "icon": "lastdotfm",
-        "url": "https://last.fm/imtilda"
+        "url": "https://last.fm/user/imtilda"
     },
     {
         "icon": "osu",
