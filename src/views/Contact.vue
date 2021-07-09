@@ -1,21 +1,18 @@
 <template>
     <div>
-        <div class="md:flex">
+        <div class="md:flex md:mt-24">
             <section class="md:w-full md:max-h-screen mb-4">
+                <h1 class="heading text-lg md:text-3xl mb-2">
+                    Get in touch
+                </h1>
+                <h2 class="subheading text-lg md:text-xl mb-4">
+                    Just in case you want to know all the random things I do!
+                </h2>
+                <ContactMethods class="mb-8"/>
                 <h1 class="heading text-lg md:text-2xl mb-2">
-                    Contact via email:
+                    Need something more direct?
                 </h1>
                 <Click2Copy text="tda@stairway.cf"/>
-                <h1 class="heading text-lg md:text-2xl mb-2">
-                    Or contact via Discord:
-                </h1>
-                <Click2Copy text="tilda#6729"/>
-                <h1 class="heading text-lg md:text-2xl mb-2">
-                    Also see the <router-link to="/about">About</router-link> page for social media accounts!
-                </h1>
-                <h2 class="subheading mt-2">
-                    As long as it's not spam, I'll probably respond.
-                </h2>
             </section>
         </div>
 
@@ -23,11 +20,13 @@
 </template>
 
 <script>
-import Click2Copy from '../components/Click2Copy.vue'
+import Click2Copy from '../components/Click2Copy'
+import ContactMethods from '../components/ContactMethods'
 
 export default {
     components: {
-        Click2Copy
+        Click2Copy,
+        ContactMethods
     },
 }
 </script>

@@ -8,11 +8,7 @@
                 <h2 class="subheading text-lg md:text-xl mb-6">
                     I do stuff on the internet sometimes.
                 </h2>
-                <div class="md:flex flex-row items-center justify-center space-x-3">
-                    <span v-for="method in this.methods" :key="[method]">
-                        <ContactMethod :method="method"/>
-                    </span>
-                </div> 
+                <ContactMethods/>
             </section>
         </div>
         <div class="md:flex md:mt-12 mb-12 items-center justify-between">
@@ -42,18 +38,12 @@
 
 <script>
 import CodeStats from '../components/CodeStats'
-import ContactMethod from '../components/ContactMethod.vue'
-import contacts from '../static/contacts'
+import ContactMethods from '../components/ContactMethods'
 
 export default {
-    data() {
-        return {
-            methods: contacts
-        }
-    },
     components: {
         CodeStats,
-        ContactMethod,
+        ContactMethods
     }  
 }
 </script>
