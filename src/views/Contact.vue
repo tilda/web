@@ -8,7 +8,7 @@
                 <subheading class="mb-4">
                     Just in case you want to know all the random things I do!
                 </subheading>
-                <ContactMethods class="mb-8"/>
+                <ContactMethods class="mb-6"/>
                 <heading class="mb-2">
                     Need something more direct?
                 </heading>
