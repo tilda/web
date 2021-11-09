@@ -1,26 +1,37 @@
 <template>
     <div class="about">
-        <div class="md:flex md:mt-24 mb-12 items-center justify-between">
-            <section class="md:w-full mb-4">
+        <div class="md:flex md:mt-24 mb-8 items-center justify-between">
+            <section class="md:w-full">
                 <heading>
                     Hi, I'm <span class="rainbow">tilda</span>.
                 </heading>
                 <subheading>
                     I do stuff on the internet sometimes.
                 </subheading>
-                <ContactMethods/>
-            </section>
-        </div>
-        <div class="md:flex md:mt-12 mb-12 items-center justify-between">
-            <section class="md:w-full mb-4 mt-6 mr-6">
-                <heading>A couple of facts about myself!</heading>
-                <subheading>(I mean if you're here, you might as well get to know me a bit)</subheading>
-                <ul>
-                    <li>I'm a he (or a they). Either is fine :)</li>
-                    <li>I'm pretty into computers, they're fun. (most of the time)</li>
-                    <li>I like trying to help people when they have issues.</li>
-                    <li>Talking your brain out with subjects you have no interest in is my specialty~</li>
-                </ul>
+                <div class="grid grid-flow-col gap-1">
+                    <Card href="https://github.com/tilda">
+                        <subheading class="font-bold">GitHub Repos</subheading>
+                        <subheading v-if="!populated">...</subheading>
+                        <heading v-else>{{ data.github }}</heading>
+                    </Card>
+                    <Card href="https://last.fm/user/imtilda">
+                        <subheading class="font-bold" v-if="!populated">...</subheading>
+                        <subheading class="font-bold" v-else-if="data.lfm.nowPlaying">Current Track</subheading>
+                        <subheading class="font-bold" v-else>Last Played Track</subheading>
+                        <subheading v-if="!populated">...</subheading>
+                        <subheading v-else>"{{ data.lfm.title }}" <br/>by {{ data.lfm.artist }}</subheading>
+                    </Card>
+                    <Card href="https://steamcommunity.com/id/thonker">
+                        <subheading class="font-bold">Last Game Played</subheading>
+                        <subheading v-if="!populated">...</subheading>
+                        <subheading v-else>{{ data.steam.name }} ({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
+                    </Card>
+                    <Card href="https://anilist.co/user/tda">
+                        <subheading class="font-bold">Anime Watched</subheading>
+                        <subheading v-if="!populated">...</subheading>
+                        <heading v-else>{{ data.anilist }}</heading>
+                    </Card>
+                </div>
             </section>
         </div>
         <div class="md:flex mb-24 items-center justify-between">
@@ -38,12 +49,30 @@
 
 <script>
 import CodeStats from '../components/CodeStats'
-import ContactMethods from '../components/ContactMethods'
+import Card from '../components/Card'
+import axios from 'axios'
 
 export default {
     components: {
         CodeStats,
-        ContactMethods,
-    }  
+        Card
+    },
+    data() {
+        return {
+            populated: false,
+            data: {}
+        }
+    },
+    mounted() {
+        axios.get('https://copiumapi.yourdomain.workers.dev/api/v1/current')
+        .then(response => (this.data = response.data))
+        .finally(this.populated = true)
+    },
+    filters: {
+        actuallyReadable: function(beep) {
+            // just preparing for when my Cookie Clicker hours go into the thousands... lol
+            return beep.toLocaleString(navigator.language, { style: 'unit', unit: 'hour'})
+        }
+    }
 }
 </script>
