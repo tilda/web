@@ -15,7 +15,7 @@
                         <heading v-else>{{ data.github }}</heading>
                     </Card>
                     <Card href="https://last.fm/user/imtilda">
-                        <subheading class="font-bold" v-if="!populated">...</subheading>
+                        <subheading class="font-bold" v-if="!populated">Last Played Track</subheading>
                         <subheading class="font-bold" v-else-if="data.lfm.nowPlaying">Current Track</subheading>
                         <subheading class="font-bold" v-else>Last Played Track</subheading>
                         <subheading v-if="!populated">...</subheading>
