@@ -24,7 +24,7 @@
                     <Card href="https://steamcommunity.com/id/thonker">
                         <subheading class="font-bold">Last Game Played</subheading>
                         <subheading v-if="!populated">...</subheading>
-                        <subheading v-else>{{ data.steam.name }} ({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
+                        <subheading v-else>{{ data.steam.name }} <br/>({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
                     </Card>
                     <Card href="https://anilist.co/user/tda">
                         <subheading class="font-bold">Anime Watched</subheading>
