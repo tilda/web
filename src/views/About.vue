@@ -20,7 +20,6 @@
                     <li>I'm pretty into computers, they're fun. (most of the time)</li>
                     <li>I like trying to help people when they have issues.</li>
                     <li>Talking your brain out with subjects you have no interest in is my specialty~</li>
-                    <Card>blobwob</Card>
                 </ul>
             </section>
         </div>
@@ -40,13 +39,11 @@
 <script>
 import CodeStats from '../components/CodeStats'
 import ContactMethods from '../components/ContactMethods'
-import Card from '../components/Card'
 
 export default {
     components: {
         CodeStats,
         ContactMethods,
-        Card
     }  
 }
 </script>
