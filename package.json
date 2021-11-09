@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "a17t": "^0.1.4",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "core-js": "^3.6.5",
     "roboto-mono-webfont": "^2.0.986",
     "simple-icons": "^5.0.0",
