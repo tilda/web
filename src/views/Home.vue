@@ -9,14 +9,14 @@
         </div>
         <div class="md:flex md:mt-8 mb-24 items-center justify-between">
             <section class="md:w-full">
-                <h1 class="heading text-lg md:text-3xl">
+                <heading>
                     Hi, I'm <span class="rainbow">tilda</span>.
-                </h1>
-                <h2 class="subheading text-lg md:text-xl">
+                </heading>
+                <subheading class="mb-0">
                     Welcome to my home on the internet.<br/>
                     If you're new here, try the<br/>
                     <router-link to="/about">About</router-link> page ;)
-                </h2>
+                </subheading>
             </section>
         </div>
     </div>
