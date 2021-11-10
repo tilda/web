@@ -22,7 +22,9 @@
                         <subheading v-else>"{{ data.lfm.title }}" <br/>by {{ data.lfm.artist }}</subheading>
                     </Card>
                     <Card href="https://steamcommunity.com/id/thonker">
-                        <subheading class="font-bold">Last Game Played</subheading>
+                        <subheading class="font-bold" v-if="!populated">Last Played Game</subheading>
+                        <subheading class="font-bold" v-else-if="data.steam.nowPlaying">Currently Playing</subheading>
+                        <subheading class="font-bold" v-else>Last Played Game</subheading>
                         <subheading v-if="!populated">...</subheading>
                         <subheading v-else>{{ data.steam.name }} <br/>({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
                     </Card>
