@@ -8,7 +8,7 @@
                 <subheading>
                     I do stuff on the internet sometimes.
                 </subheading>
-                <div class="grid grid-flow-col gap-1">
+                <div class="grid grid-flow-col">
                     <Card href="https://github.com/tilda">
                         <subheading class="font-bold">GitHub Repos</subheading>
                         <subheading v-if="!populated">...</subheading>
@@ -32,6 +32,8 @@
                         <heading v-else>{{ data.anilist }}</heading>
                     </Card>
                 </div>
+                <br/>
+                <router-link to="/contact" class="text-sm">You can also look at my other social medias here, if you're interested</router-link>
             </section>
         </div>
         <div class="md:flex mb-24 items-center justify-between">
