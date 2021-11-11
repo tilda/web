@@ -1,10 +1,10 @@
 <template>
-    <div id="codestats" class="shadow-md hover:shadow-lg">
+    <Frame>
         <h2 class="subheading text-lg md:text-xl">Sorted in order of usage:</h2>
         <b v-if="loadingStats">Loading stats, give me a moment</b>
         <ul>
             <li v-for="lang in stats" :key="[lang[1].xps, lang[0]]">
-                <span class="subheading text-lg mb-5 language-name">{{ lang[0] }}</span>
+                <span class="subheading text-lg mb-5 font-bold">{{ lang[0] }}</span>
                 <span v-if="fluent(lang[0])" class="ml-1" title="I consider myself fluent in this language">
                     <Unicon name="favorite" fill="gold" width="16" height="16" icon-style="monochrome"/>
                 </span>
@@ -12,25 +12,16 @@
                 <br>
             </li>
         </ul>
-    </div>
+    </Frame>
 </template>
-
-<style scoped>
-    #codestats {
-        min-height: 330px;
-        max-height: 330px;
-        overflow: auto;
-        padding-top: 5px;
-    }
-    .language-name {
-        font-weight: bold;
-    }
-</style>
-
 <script>
 const axios = require('axios').default
+import Frame from './Frame'
 
 export default {
+    components: {
+        Frame
+    },
     data() {
         return {
             stats: null,

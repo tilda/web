@@ -80,7 +80,7 @@ html {
 .dark #nav a, .dark .heading {
     color: var(--dark-heading);
 }
-.dark #nav a.router-link-exact-active, .dark #codestats {
+.dark #nav a.router-link-exact-active, .dark .frame {
     border: 1.5px solid var(--dark-border);
 }
 ::-webkit-scrollbar {

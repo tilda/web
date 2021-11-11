@@ -1,14 +1,14 @@
 <template>
     <div class="about">
-        <div class="md:flex md:mt-24 mb-8 items-center justify-between">
+        <div class="md:flex md:mt-24 mb-12 md:pl-6">
             <section class="md:w-full">
                 <heading>
                     Hi, I'm <span class="rainbow">tilda</span>.
                 </heading>
-                <subheading>
+                <subheading class="mb-4">
                     I do stuff on the internet sometimes.
                 </subheading>
-                <div class="grid grid-flow-col">
+                <div class="grid grid-flow-row justify-center items-center md:grid-flow-col gap-2">
                     <Card href="https://github.com/tilda">
                         <subheading class="font-bold">GitHub Repos</subheading>
                         <subheading v-if="!populated">...</subheading>
@@ -35,7 +35,23 @@
                     </Card>
                 </div>
                 <br/>
-                <router-link to="/contact" class="text-sm">You can also look at my other social medias here, if you're interested</router-link>
+                <router-link to="/contact" class="text-sm">&#8594; Also see my other online presences</router-link>
+            </section>
+        </div>
+        <div class="md:flex mb-24 items-center justify-between">
+            <section class="md:w-5/12">
+                <heading>Who/what am I?</heading>
+            </section>
+            <section class="md:w-7/12">
+                <Frame>
+                    <heading class="pb-2">I'm a young geek from Texas.</heading>
+                    <hr/>
+                    <p class="pt-2 px-2">
+                        To expand on this, I like programming, video games, and computers in general. Most, if not all, of the things I do revolve around these 3 interests.
+                        <br/>You may be coming from my established presence on <i>osu!</i> (as a player/mapper), or it could be you just saw one of my projects on <i>GitHub</i> and wanted to see what else I've done.
+                        <br/>In any case, I have a lot of places I like to spend my time, whether that'd be hammering out a new function in this very website or just playing a couple games with friends.
+                    </p>
+                </Frame>
             </section>
         </div>
         <div class="md:flex mb-24 items-center justify-between">
@@ -44,7 +60,7 @@
                 <subheading>(Though, could you consider Markdown anything near programming?)</subheading>
                 <a class="text-sm" target="_blank" href="https://codestats.net/users/tda">(Here's where this data comes from.)</a>
             </section>      
-            <section class="md:w-6/12 mt-6 mr-6 align-baseline">
+            <section class="md:w-6/12 mt-6 align-baseline">
                 <CodeStats/>
             </section>
         </div>
@@ -55,11 +71,13 @@
 import CodeStats from '../components/CodeStats'
 import Card from '../components/Card'
 import axios from 'axios'
+import Frame from '../components/Frame'
 
 export default {
     components: {
         CodeStats,
-        Card
+        Card,
+        Frame
     },
     data() {
         return {
