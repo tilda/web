@@ -24,7 +24,7 @@
                     <Card href="https://steamcommunity.com/id/thonker">
                         <subheading class="font-bold" v-if="!populated">Last Played Game</subheading>
                         <subheading class="font-bold" v-else-if="data.steam.nowPlaying">Currently Playing</subheading>
-                        <subheading class="font-bold" v-else>Last Played Game</subheading>
+                        <subheading class="font-bold" v-else>Most Played Recently(?)</subheading>
                         <subheading v-if="!populated">...</subheading>
                         <subheading v-else>{{ data.steam.name }} <br/>({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
                     </Card>
@@ -34,8 +34,8 @@
                         <heading v-else>{{ data.anilist }}</heading>
                     </Card>
                 </div>
-                <br/>
-                <router-link to="/contact" class="text-sm">&#8594; Also see my other online presences</router-link>
+                <br/><router-link to="/contact" class="text-sm">&#8594; Also see my other online presences</router-link>
+                <br/><span class="text-xs">More statistics coming soon... probably - (?) see <a href="https://github.com/tilda/web/issues/15">tilda/web#15</a></span>
             </section>
         </div>
         <div class="md:flex mb-24 items-center justify-between">
