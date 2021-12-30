@@ -5,11 +5,11 @@
                 <heading class="mb-2">
                     Get in touch
                 </heading>
-                <subheading class="mb-4">
+                <subheading class="mb-6">
                     Just in case you want to know all the random things I do!
                 </subheading>
                 <ContactMethods class="mb-6"/>
-                <heading class="mb-2">
+                <heading class="sm:mt-10 md:mt-4">
                     Need something more direct?
                 </heading>
                 <Click2Copy text="tda@stairway.cf"/>
