@@ -1,6 +1,6 @@
 <template>
     <div class="mb-2">
-        <input :id="text" class="rainbow text-xl md:text-4xl pain" type="text" @click="copy" :value="text" readonly>
+        <input :id="text" class="rainbow text-4xl pain" type="text" @click="copy" :value="text" readonly>
         <br/>
         <small :id="text + '2'">Click to copy!</small>
     </div>
