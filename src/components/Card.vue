@@ -1,6 +1,6 @@
 <template>
     <a :href="href">
-        <div class="card shadow-md hover:shadow-xl max-w-xs max-h-4">
+        <div :class="classList.join(' ')">
             <slot></slot>
         </div>
     </a>
@@ -12,10 +12,24 @@
 </style>
 <script>
 export default {
+    data() {
+        return {
+            classList: ['card', 'shadow-md', 'hover:shadow-xl', 'max-w-xs']
+        }
+    },
     props: {
         href: {
             required: false,
             type: String
+        },
+        justify: {
+            required: false,
+            type: Boolean
+        }
+    },
+    mounted() {
+        if (this.justify) {
+            this.classList.push('text-justify')
         }
     }
 }
