@@ -11,7 +11,9 @@
   "dependencies": {
     "a17t": "^0.1.4",
     "axios": "^0.21.2",
+    "buttercms": "^1.2.9",
     "core-js": "^3.6.5",
+    "date-fns": "^2.28.0",
     "roboto-mono-webfont": "^2.0.986",
     "simple-icons": "^5.0.0",
     "vue": "^2.6.11",

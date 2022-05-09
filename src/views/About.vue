@@ -38,11 +38,11 @@
                 <br/><span class="text-xs">More statistics coming soon... probably - (?) see <a href="https://github.com/tilda/web/issues/15">tilda/web#15</a></span>
             </section>
         </div>
-        <div class="md:flex mb-24 items-center justify-between">
+        <div class="md:flex mb-12 items-center justify-between">
             <section class="md:w-5/12">
                 <heading>Who/what am I?</heading>
             </section>
-            <section class="md:w-7/12">
+            <section class="md:w-7/12 sm:mt-6 md:mt-0">
                 <Frame>
                     <heading class="pb-2">I'm a young geek from Texas.</heading>
                     <hr/>
@@ -60,7 +60,7 @@
                 <subheading>(Though, could you consider Markdown anything near programming?)</subheading>
                 <a class="text-sm" target="_blank" href="https://codestats.net/users/tda">(Here's where this data comes from.)</a>
             </section>      
-            <section class="md:w-6/12 mt-6 align-baseline">
+            <section class="md:w-6/12 sm:mt-6 md:mt-0 align-baseline">
                 <CodeStats/>
             </section>
         </div>

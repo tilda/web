@@ -17,6 +17,7 @@
                 <ul id="navButtons" class="align-baseline sm:block flex-wrap md:flex md:items-center flex-grow py-4 px-2 md:p-0 hidden md:bg-transparent">
                     <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/about">About Me</router-link></li>
+                    <li><router-link to="/blog">Blog</router-link></li>
                     <li><router-link to="/contact">Contact</router-link></li>
                 </ul>
                 <div class="md:w-5/12 md:text-right flex items-center md:justify-end">
@@ -41,7 +42,7 @@
         position: sticky;
         top: 0;
         backdrop-filter: blur(5px);
-        z-index: 5;
+        z-index: 77727; /* fuck you youtube */
     }
 
     #nav a:link {

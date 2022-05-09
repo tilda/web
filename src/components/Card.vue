@@ -1,20 +1,23 @@
 <template>
-    <a :href="href">
-        <div :class="classList.join(' ')">
+    <a :href="href" class="sm:max-w-lg md:max-w-md">
+        <span :class="classList.join(' ')">
             <slot></slot>
-        </div>
+        </span>
     </a>
 </template>
 <style scoped>
     a {
         text-decoration: none;
     }
+    .md\:min-h-40 {
+        min-height: 160px !important;
+    }
 </style>
 <script>
 export default {
     data() {
         return {
-            classList: ['card', 'shadow-md', 'hover:shadow-xl', 'max-w-xs']
+            classList: ['card', 'shadow-md', 'hover:shadow-xl']
         }
     },
     props: {
@@ -22,14 +25,14 @@ export default {
             required: false,
             type: String
         },
-        justify: {
+        left: {
             required: false,
             type: Boolean
-        }
+        },
     },
     mounted() {
-        if (this.justify) {
-            this.classList.push('text-justify')
+        if (this.left) {
+            this.classList.push('text-left')
         }
     }
 }
