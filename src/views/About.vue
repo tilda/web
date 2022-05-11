@@ -19,14 +19,14 @@
                         <subheading class="font-bold" v-else-if="data.lfm.nowPlaying">Current Track</subheading>
                         <subheading class="font-bold" v-else>Last Played Track</subheading>
                         <subheading v-if="!populated">...</subheading>
-                        <subheading v-else>"{{ data.lfm.title }}" <br/>by {{ data.lfm.artist }}</subheading>
+                        <subheading v-else small>"{{ data.lfm.title }}" <br/>by {{ data.lfm.artist }}</subheading>
                     </Card>
                     <Card href="https://steamcommunity.com/id/thonker">
                         <subheading class="font-bold" v-if="!populated">Last Played Game</subheading>
                         <subheading class="font-bold" v-else-if="data.steam.nowPlaying">Currently Playing</subheading>
                         <subheading class="font-bold" v-else>Most Played Recently(?)</subheading>
                         <subheading v-if="!populated">...</subheading>
-                        <subheading v-else>{{ data.steam.name }} <br/>({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
+                        <subheading v-else small>{{ data.steam.name }} <br/>({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
                     </Card>
                     <Card href="https://anilist.co/user/tda">
                         <subheading class="font-bold">Anime Watched</subheading>
@@ -43,7 +43,7 @@
                 <heading>Who/what am I?</heading>
             </section>
             <section class="md:w-7/12 sm:mt-6 md:mt-0">
-                <Frame>
+                <Frame aria-role="paragraph">
                     <heading class="pb-2">I'm a young geek from Texas.</heading>
                     <hr/>
                     <p class="pt-2 px-2">
