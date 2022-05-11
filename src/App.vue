@@ -1,6 +1,6 @@
 <template>
     <div id="app" class="max-w-screen-lg mx-auto px-6 py-4 md:px-4 md:py-10">
-        <div class="relative mb-8" id="nav">
+        <div class="relative mb-8 rounded-b-lg" id="nav">
             <div class="block sm:hidden">
                 <button class="flex items-center px-3 py-3 text-gray-700 hover:text-gray-900" title="Menu" v-on:click="mobileMenu">
                     <Unicon width="20" height="20" name="bars" :fill="iconColor"/>
