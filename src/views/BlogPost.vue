@@ -8,7 +8,8 @@
                 <subheading class="mb-4">
                     {{ post.data.summary }}
                 </subheading>
-                <span>{{ date }}</span>
+                <span>{{ convertIsoDate(post.data.published) }}</span>
+                <br/><span v-if="post.data.updated" class="text-sm">(updated {{ convertIsoDate(post.data.updated) }})</span>
             </section>
         </div>
         <div class="md:mt-8 text-left">
@@ -27,10 +28,14 @@ export default {
             date: ''
         }
     },
+    methods: {
+        convertIsoDate(iso_date) {
+            return format(parseISO(iso_date), 'PP p')
+        }
+    },
     created() {
         this.$cms.post.retrieve(this.$route.params.post).then(res => {
             this.post = res.data
-            this.date = format(parseISO(this.post.data.published), 'PPPppp')
         }).catch(res => {
             console.log(res) // will figure out actual error handling later!
         })
