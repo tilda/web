@@ -12,7 +12,7 @@
         </div>
         <div class="md:mt-8">
             <subheading bold>Post list</subheading>
-            <section class="md:w-full grid grid-flow-cols grid-cols-3">
+            <section class="md:w-full sm:flex md:grid md:grid-flow-cols md:grid-cols-3">
                 <Card :href="`/blog/${post.slug}`" left v-for="(post, index) in posts" class="mr-2" :key="`${post.slug}_${index}`">
                     <heading small>{{ post.title }}</heading>
                     <subheading small>{{ post.summary }}</subheading>
