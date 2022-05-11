@@ -10,11 +10,45 @@
     /* light vars */
     --light-bg: #eceff4;
     --light-text: #2e3440;
-    --light-scrollbar-thumb: #e5e9f0;
-    --light-scrollbar-track: #d8dee9;
+    --light-scrollbar-thumb: #d8dee9;
+    --light-scrollbar-track: #e5e9f0;
     --light-border: #434c5e;
     /* gradient */
     --gradient: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
+}
+
+@keyframes dark-to-light {
+    from {
+        background-color: var(--dark-bg);
+        color: var(--dark-text);
+    }
+    to { 
+        background-color: var(--light-bg);
+        color: var(--light-text);
+    }
+}
+
+@keyframes light-to-dark {
+    from {
+        background-color: var(--light-bg);
+        color: var(--light-text);
+    }
+    to {
+        background-color: var(--dark-bg);
+        color: var(--dark-text);
+    }
+}
+
+.dark-to-light, .light-to-dark {
+    animation-duration: 700ms;
+}
+
+.dark-to-light {
+    animation-name: dark-to-light;
+}
+
+.light-to-dark {
+    animation-name: light-to-dark;
 }
 
 span.switcher:hover {
