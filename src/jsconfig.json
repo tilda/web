@@ -1,0 +1,6 @@
+{
+    "vueCompilerOptions": {
+        "experimentalShamefullySupportOptionsApi": true,
+        "experimentalCompatMode": 2,
+    }
+}
