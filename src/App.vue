@@ -2,7 +2,7 @@
     <div id="app" class="max-w-screen-lg mx-auto px-6 py-4 md:px-4 md:py-10">
         <div class="relative mb-8" id="nav">
             <div class="block sm:hidden">
-                <button class="flex items-center px-3 py-3 text-gray-700 hover:text-gray-900" title="Menu" onclick="document.querySelector('#navButtons').classList.toggle('hidden')">
+                <button class="flex items-center px-3 py-3 text-gray-700 hover:text-gray-900" title="Menu" v-on:click="mobileMenu">
                     <Unicon width="20" height="20" name="bars" :fill="iconColor"/>
                 </button>
             </div>            
@@ -14,13 +14,13 @@
                         </a>
                     </h3>
                 </div>
-                <ul id="navButtons" class="align-baseline sm:block flex-wrap md:flex md:items-center flex-grow py-4 px-2 md:p-0 hidden md:bg-transparent">
+                <ul id="navButtons" class="align-baseline sm:block flex-wrap md:flex md:items-center flex-grow px-2 md:p-0 hidden md:bg-transparent">
                     <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/about">About Me</router-link></li>
                     <li><router-link to="/blog">Blog</router-link></li>
                     <li><router-link to="/contact">Contact</router-link></li>
                 </ul>
-                <div class="md:w-5/12 md:text-right flex items-center md:justify-end">
+                <div id="icons" class="md:text-right flex items-center md:justify-end">
                     <ThemeSwitcher/>
                     <a href="https://github.com/tilda/web" title="View this website's source on GitHub">
                         <Unicon width="24" height="24" name="github" :fill="iconColor"/>
@@ -66,6 +66,13 @@ export default {
     computed: {
         iconColor: function() {
             return this.$store.state.dark ? "white" : "black"
+        }
+    },
+    methods: {
+        mobileMenu: function() {
+            document.querySelector('#navButtons').classList.toggle('hidden')
+            document.querySelector('#icons').classList.toggle('pt-4')
+            document.querySelector('#icons').classList.toggle('pl-4')
         }
     },
     mounted() {
