@@ -19,7 +19,7 @@ export default new Vuex.Store({
   mutations: {
     switchTheme(state) {
       state.dark = !state.dark
-      if (window.matchMedia('(prefers-reduced-motion: reduce')) {
+      if (window.matchMedia('(prefers-reduced-motion: reduce').matches) {
         return document.body.classList.replace((state.dark ? 'light' : 'dark'), (state.dark ? 'dark' : 'light'))
       }
 
