@@ -14,8 +14,8 @@
                 </heading>
                 <subheading class="mb-0">
                     Welcome to my home on the internet.<br/>
-                    If you're new here, try the<br/>
-                    <router-link to="/about">About</router-link> page ;)
+                    If you're new here, try the <router-link to="/about">About</router-link> page,<br/>
+                    or maybe go check my <router-link to="/blog">Blog</router-link> out?
                 </subheading>
             </section>
         </div>
