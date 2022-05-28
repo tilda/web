@@ -1,4 +1,5 @@
-const ctxReplacement = require('webpack').ContextReplacementPlugin
+// TODO: fix this. see #13
+/* const ctxReplacement = require('webpack').ContextReplacementPlugin
 const contacts = import('./src/static/contacts.mjs')
 
 function getAllUsedIcons() {
@@ -18,4 +19,4 @@ module.exports = {
             )
         ]
     }
-}
+} */

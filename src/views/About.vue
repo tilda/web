@@ -10,26 +10,27 @@
                 </subheading>
                 <div class="grid grid-flow-row justify-center items-center md:grid-flow-col gap-2">
                     <Card href="https://github.com/tilda">
-                        <subheading class="font-bold">GitHub Repos</subheading>
+                        <subheading bold>GitHub Repos</subheading>
                         <subheading v-if="!populated">...</subheading>
                         <heading v-else>{{ data.github }}</heading>
                     </Card>
                     <Card href="https://last.fm/user/imtilda">
-                        <subheading class="font-bold" v-if="!populated">Last Played Track</subheading>
-                        <subheading class="font-bold" v-else-if="data.lfm.nowPlaying">Current Track</subheading>
-                        <subheading class="font-bold" v-else>Last Played Track</subheading>
+                        <subheading bold v-if="!populated">Last Played Track</subheading>
+                        <subheading bold v-else-if="data.lfm.nowPlaying">Current Track</subheading>
+                        <subheading bold v-else>Last Played Track</subheading>
                         <subheading v-if="!populated">...</subheading>
                         <subheading v-else small>"{{ data.lfm.title }}" <br/>by {{ data.lfm.artist }}</subheading>
                     </Card>
                     <Card href="https://steamcommunity.com/id/thonker">
-                        <subheading class="font-bold" v-if="!populated">Last Played Game</subheading>
-                        <subheading class="font-bold" v-else-if="data.steam.nowPlaying">Currently Playing</subheading>
-                        <subheading class="font-bold" v-else>Most Played Recently(?)</subheading>
+                        <subheading bold v-if="!populated">Last Played Game</subheading>
+                        <subheading bold v-else-if="data.steam.nowPlaying">Currently Playing</subheading>
+                        <subheading bold v-else-if="data.steam.hoursPlayed === 0">Last Played Game</subheading>
+                        <subheading bold v-else>Most Played Recently(?)</subheading>
                         <subheading v-if="!populated">...</subheading>
                         <subheading v-else small>{{ data.steam.name }} <br/>({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
                     </Card>
                     <Card href="https://anilist.co/user/tda">
-                        <subheading class="font-bold">Anime Watched</subheading>
+                        <subheading bold>Anime Watched</subheading>
                         <subheading v-if="!populated">...</subheading>
                         <heading v-else>{{ data.anilist }}</heading>
                     </Card>
