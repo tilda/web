@@ -12,7 +12,7 @@
                 <heading class="sm:mt-10 md:mt-4">
                     Need something more direct?
                 </heading>
-                <Click2Copy text="tda@stairway.cf"/>
+                <Click2Copy text="me@til.pm"/>
             </section>
         </div>
 
