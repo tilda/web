@@ -9,6 +9,7 @@
     "dev": "vue-cli-service serve"
   },
   "dependencies": {
+    "@vue/compiler-dom": "^3.2.40",
     "a17t": "^0.1.4",
     "axios": "^0.21.2",
     "buttercms": "^1.2.9",

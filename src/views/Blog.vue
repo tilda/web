@@ -29,9 +29,6 @@
     </div>
 </template>
 <style scoped>
-    .text-sm {
-        font-size: 0.875rem !important; /* override forced subheading size */
-    }
     .md\:min-h-80 {
         min-height: 320px;
     }
