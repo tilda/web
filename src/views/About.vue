@@ -1,7 +1,9 @@
 <template>
-    <div class="about">
+    <div>
         <div class="md:flex md:mt-24 mb-12 md:pl-6">
             <section class="md:w-full">
+                <img src="../assets/avy.webp" title="Art by @ahppple (Twitter)" alt="Fan art of Rin Shima from Yuru Camp looking at viewer" class="rounded-full content-center mx-auto h-48 w-48">
+                <br/>
                 <heading>
                     Hi, I'm <span class="rainbow">tilda</span>.
                 </heading>
@@ -27,7 +29,7 @@
                         <subheading bold v-else-if="data.steam.hoursPlayed === 0">Last Played Game</subheading>
                         <subheading bold v-else>Most Played Recently(?)</subheading>
                         <subheading v-if="!populated">...</subheading>
-                        <subheading v-else small>{{ data.steam.name }} <br/>({{ data.steam.hoursPlayed | actuallyReadable }})</subheading>
+                        <subheading v-else small>{{ data.steam.name }} <br/>({{ data.steam.hoursPlayed | actuallyReadableHours }})</subheading>
                     </Card>
                     <Card href="https://anilist.co/user/tda">
                         <subheading bold>Anime Watched</subheading>
@@ -39,20 +41,16 @@
                 <br/><span class="text-xs">More statistics coming soon... probably - (?) see <a href="https://github.com/tilda/web/issues/15">tilda/web#15</a></span>
             </section>
         </div>
-        <div class="md:flex mb-12 items-center justify-between">
-            <section class="md:w-5/12">
-                <heading>Who/what am I?</heading>
-            </section>
-            <section class="md:w-7/12 sm:mt-6 md:mt-0">
-                <Frame aria-role="paragraph">
-                    <heading class="pb-2">I'm a young geek from Texas.</heading>
-                    <hr/>
-                    <p class="pt-2 px-2">
-                        To expand on this, I like programming, video games, and computers in general. Most, if not all, of the things I do revolve around these 3 interests.
-                        <br/>You may be coming from my established presence on <i>osu!</i> (as a player/mapper), or it could be you just saw one of my projects on <i>GitHub</i> and wanted to see what else I've done.
-                        <br/>In any case, I have a lot of places I like to spend my time, whether that'd be hammering out a new function in this very website or just playing a couple games with friends.
+        <div class="mb-12">
+            <section class="md:w-full sm:mt-6 md:mt-0">
+                    <heading class="italic mb-2">Who are you?</heading>
+                    <p class="text-justify">
+                        Hi, I'm just someone who grew up around computers and decided to make them his hobby.
+                        I started learning programming from a pretty young age, starting with "not a real language" HTML and moving onto Python and other various languages.
+                        <br/>Currently, I'm on a sort of "long burnout", only really opening my editor when I need to make edits to my existing projects.
+                        In the past, I was particularly focused on making Discord bots for my personal use, and in one case, for the general public (reaching around 700 servers at its peak).
+                        <br/>Nowadays, I love talking to my friends (both offline and online), playing rhythm games (like <i>osu!</i>, where I also participate in making "beatmaps" for the game) and listening to various types of music (with my current rotation mainly consisting of Japanese pop).
                     </p>
-                </Frame>
             </section>
         </div>
         <div class="md:flex mb-24 items-center justify-between">
@@ -72,13 +70,11 @@
 import CodeStats from '../components/CodeStats'
 import Card from '../components/Card'
 import axios from 'axios'
-import Frame from '../components/Frame'
 
 export default {
     components: {
         CodeStats,
         Card,
-        Frame
     },
     data() {
         return {
@@ -92,9 +88,9 @@ export default {
         .finally(this.populated = true)
     },
     filters: {
-        actuallyReadable: function(beep) {
+        actuallyReadableHours: function(time) {
             // just preparing for when my Cookie Clicker hours go into the thousands... lol
-            return beep.toLocaleString(navigator.language, { style: 'unit', unit: 'hour'})
+            return time.toLocaleString(navigator.language, { style: 'unit', unit: 'hour'})
         }
     }
 }
