@@ -121,7 +121,7 @@ html {
     color: var(--dark-heading);
 }
 .dark #nav a.router-link-exact-active, .dark .frame {
-    border: 1.5px solid var(--dark-border);
+    border: 1.5px solid var(--dark-border) !important;
 }
 ::-webkit-scrollbar {
     width: 15px;
@@ -140,7 +140,7 @@ html {
     scrollbar-color: var(--light-scrollbar-thumb) var(--light-scrollbar-track);
 }
 .light #nav a.router-link-exact-active, .light #codestats {
-    border: 1.5px solid var(--light-border);
+    border: 1.5px solid var(--light-border) !important;
 }
 .light::-webkit-scrollbar-track {
     background-color: var(--light-scrollbar-track);
