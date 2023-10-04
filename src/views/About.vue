@@ -43,7 +43,7 @@
         </div>
         <div class="mb-12">
             <section class="md:w-full sm:mt-6 md:mt-0">
-                    <heading class="italic mb-2">"Who are you?""</heading>
+                    <heading class="italic mb-2">"Who are you?"</heading>
                     <p class="text-justify">
                         Hi, I'm just someone who grew up around computers and decided to make them his hobby.
                         I started learning programming from a pretty young age, starting with "not a real language" HTML and moving onto Python and other various languages.
@@ -85,9 +85,9 @@ export default {
         }
     },
     mounted() {
-        axios.get('https://copiumapi.yourdomain.workers.dev/api/v1/current')
+        this.populated = axios.get('https://copiumapi.yourdomain.workers.dev/api/v1/current')
         .then(response => (this.data = response.data))
-        .finally(this.populated = true)
+        .finally(() => true)
     },
     filters: {
         actuallyReadableHours: function(time) {
