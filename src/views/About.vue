@@ -43,13 +43,15 @@
         </div>
         <div class="mb-12">
             <section class="md:w-full sm:mt-6 md:mt-0">
-                    <heading class="italic mb-2">Who are you?</heading>
+                    <heading class="italic mb-2">"Who are you?""</heading>
                     <p class="text-justify">
                         Hi, I'm just someone who grew up around computers and decided to make them his hobby.
                         I started learning programming from a pretty young age, starting with "not a real language" HTML and moving onto Python and other various languages.
                         <br/>Currently, I'm on a sort of "long burnout", only really opening my editor when I need to make edits to my existing projects.
                         In the past, I was particularly focused on making Discord bots for my personal use, and in one case, for the general public (reaching around 700 servers at its peak).
-                        <br/>Nowadays, I love talking to my friends (both offline and online), playing rhythm games (like <i>osu!</i>, where I also participate in making "beatmaps" for the game) and listening to various types of music (with my current rotation mainly consisting of Japanese pop).
+                        <br/>My favorite activities are currently talking to my friends (both offline and online), playing rhythm games (like <i>osu!</i>, where I also participate in making "beatmaps" for the game) and listening to various types of music (with my current rotation mainly consisting of Japanese pop).
+                        <br/><br/>Eventually though, I hope to get back into programming and work in the tech industry - as I am still extremely passionate about computing and want to make the world a better place using them, somehow.
+                        <span class="text-sm">(P.S. Recruiters, I'm not of working age yet. However, I will be pretty soon! If you're looking to fill some entry-level positions/internships and don't mind waiting some time, I'd love to be that guy if it's in the North Texas area. <router-link to="/contact">Get in touch</router-link> if you're that crazy.)</span>
                     </p>
             </section>
         </div>
