@@ -51,7 +51,7 @@
                         In the past, I was particularly focused on making Discord bots for my personal use, and in one case, for the general public (reaching around 700 servers at its peak).
                         <br/>My favorite activities are currently talking to my friends (both offline and online), playing rhythm games (like <i>osu!</i>, where I also participate in making "beatmaps" for the game) and listening to various types of music (with my current rotation mainly consisting of Japanese pop).
                         <br/><br/>Eventually though, I hope to get back into programming and work in the tech industry - as I am still extremely passionate about computing and want to make the world a better place using them, somehow.
-                        <span class="text-sm">(P.S. Recruiters, I'm not of working age yet. However, I will be pretty soon! If you're looking to fill some entry-level positions/internships and don't mind waiting some time, I'd love to be that guy if it's in the North Texas area. <router-link to="/contact">Get in touch</router-link> if you're that crazy.)</span>
+                        <span class="text-sm">(P.S. Unfortunately I'm unable to work for various reasons at the moment - but if you're a recruiter looking for some fresh talent to nurture, you can <router-link to="/contact">get in touch</router-link> anyways. I'd love to talk.)</span>
                     </p>
             </section>
         </div>
