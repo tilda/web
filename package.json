@@ -20,7 +20,7 @@
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-tooltip": "^0.1.0",
-    "vue-unicons": "^2.2.1",
+    "vue-unicons": "^3.3.1",
     "vuex": "^3.4.0",
     "vuex-persist": "^2.2.0"
   },
