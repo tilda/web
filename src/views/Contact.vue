@@ -8,7 +8,7 @@
                 <subheading class="mb-6">
                     Just in case you want to know all the random things I do!
                 </subheading>
-                <ContactMethods class="mb-6"/>
+                <ContactMethods class="mb-6" :professional="professional"/>
                 <heading class="sm:mt-10 md:mt-4">
                     Need something more direct?
                 </heading>
@@ -20,13 +20,18 @@
 </template>
 
 <script>
-import Click2Copy from '../components/Click2Copy'
-import ContactMethods from '../components/ContactMethods'
+import Click2Copy from '../components/Click2Copy.vue'
+import ContactMethods from '../components/ContactMethods.vue'
 
 export default {
     components: {
         Click2Copy,
         ContactMethods
     },
+    data() {
+        return {
+            "professional": false
+        }
+    }
 }
 </script>

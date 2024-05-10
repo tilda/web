@@ -54,8 +54,8 @@
 </style>
 
 <script>
-import ThemeSwitcher from '@/components/ThemeSwitcher'
-import Footer from '@/components/Footer'
+import ThemeSwitcher from './components/ThemeSwitcher.vue'
+import Footer from './components/Footer.vue'
 
 export default {
     components: {

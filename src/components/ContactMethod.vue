@@ -17,6 +17,7 @@
     }
 </style>
 <script>
+import icons from 'simple-icons'
 
 export default {
     props: {
@@ -27,7 +28,7 @@ export default {
     },
     data: function() {
         return {
-            icon: require(`simple-icons/icons/${this.method.icon}`)
+            icon: icons.get(this.method.icon)
         }
     }
 }

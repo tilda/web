@@ -34,7 +34,7 @@
     }
 </style>
 <script>
-import Card from '../components/Card'
+import Card from '../components/Card.vue'
 import { format, parseISO } from 'date-fns'
 
 export default {

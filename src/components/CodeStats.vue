@@ -15,8 +15,8 @@
     </Frame>
 </template>
 <script>
-const axios = require('axios').default
-import Frame from './Frame'
+import axios from 'axios'
+import Frame from './Frame.vue'
 
 export default {
     components: {

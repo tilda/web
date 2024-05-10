@@ -68,8 +68,8 @@
 </template>
 
 <script>
-import CodeStats from '../components/CodeStats'
-import Card from '../components/Card'
+import CodeStats from '../components/CodeStats.vue'
+import Card from '../components/Card.vue'
 import axios from 'axios'
 
 export default {

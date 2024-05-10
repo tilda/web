@@ -8,8 +8,8 @@ import Unicon from 'vue-unicons'
 import store from './store'
 import 'roboto-mono-webfont'
 import './assets/theming.css'
-import Heading from './components/Heading'
-import Subheading from './components/Subheading'
+import Heading from './components/Heading.vue'
+import Subheading from './components/Subheading.vue'
 import Butter from 'buttercms'
 
 Unicon.add([uniSun, uniMoon, uniGithub, uniBars, uniFavoriteMonochrome, uniCheckCircleMonochrome, uniArrowLeft, uniArrowRight])

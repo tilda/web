@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ContactMethod from '../components/ContactMethod'
+import ContactMethod from '../components/ContactMethod.vue'
 import contacts from '../static/contacts'
 
 export default {
@@ -16,8 +16,18 @@ export default {
             methods: contacts
         }
     },
+    props: {
+        professional: Boolean
+    },
     components: {
         ContactMethod
+    },
+    filters: {
+        professional: function(method) {
+            if (method.professional == this.professional) {
+                return method
+            }
+        }
     }
 }
 </script>
