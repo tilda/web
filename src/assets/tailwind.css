@@ -1,5 +1,2 @@
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
+@import 'tailwindcss';
+@import '@catppuccin/tailwindcss/macchiato.css';

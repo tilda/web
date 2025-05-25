@@ -11,12 +11,12 @@ const routes = [
     path: "/contact",
     name: "contact",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ContactView.vue"),
+      import("../views/ContactView.vue"),
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 

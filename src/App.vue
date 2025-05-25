@@ -1,51 +1,41 @@
 <template>
-  <div :class="`flex ${currentTheme} bg-base`">
-    <div>
-      <SideNavigation/>
+    <div :class="`flex ${themeStore.current} text-ctp-subtext0 bg-ctp-base`">
+        <div>
+            <SideNavigation/>
+        </div>
+        <div class="mt-8">
+            <router-view/>  
+        </div>
     </div>
-    <div class="mt-8">
-      <router-view/>  
-    </div>
-  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-</style>
-
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted } from 'vue'
+import { useThemeSelector } from '@/store'
 
-const currentTheme = ref('')
+const themeStore = useThemeSelector()
 
 onMounted(() => {
     const themeQuery = window.matchMedia('(prefers-color-scheme: dark)')
     const updateCurrentTheme = (theme) => {
-        currentTheme.value = theme.matches ? 'macchiato' : 'latte'
+        if (themeStore.system) {
+            themeStore.current = theme.matches ? 'macchiato' : 'latte'
+        }
     }
 
+    // will run function even if on manual, but get ignored due to the check in said function
     updateCurrentTheme(themeQuery)
     themeQuery.addEventListener('change', updateCurrentTheme)
-
-    onUnmounted(() => {
-        themeQuery.removeEventListener('change', updateCurrentTheme)
-    })
 })
 </script>
 
 <script>
-import SideNavigation from "@/components/SideNavigation";
+import SideNavigation from "@/components/SideNavigation.vue";
 
 export default {
-  name: "App",
-  components: {
-    SideNavigation,
-  },
-};
+    name: "App",
+    components: {
+        SideNavigation,
+    },
+}
 </script>
