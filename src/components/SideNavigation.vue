@@ -10,12 +10,6 @@
     </nav>
 </template>
 
-<style>
-nav a.router-link-exact-active {
-    color: var(--ctp-rosewater);
-}
-</style>
-
 <script>
 import ThemeSelector from '@/components/ThemeSelector.vue'
 import { SlashIcon } from '@heroicons/vue/16/solid'

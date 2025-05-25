@@ -9,6 +9,15 @@
     </div>
 </template>
 
+<style>
+/* doesn't work in SideNavigation itself but works here
+ * i simply will not question it
+ */
+ nav a.router-link-exact-active {
+    color: var(--color-ctp-rosewater);
+}
+</style>
+
 <script setup>
 import { onMounted } from 'vue'
 import { useThemeSelector } from '@/store'
