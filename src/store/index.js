@@ -1,4 +1,8 @@
-import { defineStore } from 'pinia'
+import { defineStore, createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+
+export const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
 
 const getSystemDarkMode = () => {
     return window.matchMedia('(prefers-color-scheme: dark)') // -> true if system is dark
@@ -31,7 +35,8 @@ export const useThemeSelector = defineStore('theme', {
                 this.current = 'macchiato'
             }
         }
-    }
+    },
+    persist: true
 })
 
 export const useNavToggle = defineStore('navToggle', {
