@@ -1,11 +1,11 @@
 <template>
     <div :class="`flex ${themeStore.current} text-ctp-text bg-ctp-base`">
-        <div>
+        <nav>
             <SideNavigation/>
-        </div>
-        <div class="mt-8">
+        </nav>
+        <main class="mt-8">
             <router-view/>  
-        </div>
+        </main>
     </div>
 </template>
 
@@ -25,10 +25,10 @@
     }
 }
 
-nav a.router-link-exact-active {
+div a.router-link-exact-active {
     text-decoration: solid underline;
 }
-nav a.router-link-exact-active::before {
+div a.router-link-exact-active::before {
     display: inline-block;
     content: "↗";
     animation: 0.3s ease-out anim-vertical-slide;
