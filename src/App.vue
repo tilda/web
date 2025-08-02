@@ -1,5 +1,5 @@
 <template>
-    <div :class="`flex ${themeStore.current} text-ctp-subtext0 bg-ctp-base`">
+    <div :class="`flex ${themeStore.current} text-ctp-text bg-ctp-base`">
         <div>
             <SideNavigation/>
         </div>
@@ -13,14 +13,34 @@
 /* doesn't work in SideNavigation itself but works here
  * i simply will not question it
  */
- nav a.router-link-exact-active {
-    color: var(--color-ctp-rosewater);
+
+@keyframes anim-vertical-slide {
+    from {
+        transform: translateX(-200%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+nav a.router-link-exact-active {
+    color: var(--color-ctp-subtext0);
+
+}
+nav a.router-link-exact-active::before {
+    display: inline-block;
+    content: "↗";
+    animation: 0.3s ease-out anim-vertical-slide;
+    padding-right: 8px;
 }
 </style>
 
 <script setup>
 import { onMounted } from 'vue'
 import { useThemeSelector } from '@/store'
+import SideNavigation from '@/components/SideNavigation.vue'
 
 const themeStore = useThemeSelector()
 
@@ -36,15 +56,4 @@ onMounted(() => {
     updateCurrentTheme(themeQuery)
     themeQuery.addEventListener('change', updateCurrentTheme)
 })
-</script>
-
-<script>
-import SideNavigation from "@/components/SideNavigation.vue";
-
-export default {
-    name: "App",
-    components: {
-        SideNavigation,
-    },
-}
 </script>
