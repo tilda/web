@@ -26,8 +26,7 @@
 }
 
 nav a.router-link-exact-active {
-    color: var(--color-ctp-subtext0);
-
+    text-decoration: solid underline;
 }
 nav a.router-link-exact-active::before {
     display: inline-block;
