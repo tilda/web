@@ -22,10 +22,14 @@ export const useThemeSelector = defineStore('theme', {
             }
         },
         setLight() {
-            this.current = 'latte'
+            if (!this.system) {
+                this.current = 'latte'
+            }
         },
         setDark() {
-            this.current = 'macchiato'
+            if (!this.system) {
+                this.current = 'macchiato'
+            }
         }
     }
 })
