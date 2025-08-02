@@ -1,6 +1,5 @@
 <template>
-    <span class="md:hidden sticky cursor-pointer z-50" v-on:click="toggleMobileMenu"><SlashIcon class="size-16 text-ctp-blue"/></span>
-    <div :class="`${displayIfMobileMenuEnabled} md:sticky md:flex md:flex-col justify-between mr-8 h-screen w-48 px-8 pt-8 bg-ctp-crust text-ctp-overlay1`">
+    <div @nav-toggle="toggleMobileMenu" :class="`${displayIfMobileMenuEnabled} md:sticky flex flex-col drop-shadow-2xl justify-between mr-8 h-screen w-48 px-8 pt-8 bg-ctp-crust text-ctp-overlay1`">
         <ul class="font-bold">
             <li><router-link to="/">about me</router-link></li>
             <li><router-link to="/contact">contact</router-link></li>
@@ -11,27 +10,13 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { useNavToggle } from '@/store'
+import ThemeSelector from '@/components/ThemeSelector.vue'
 
-let mobileMenuOpen = ref(false)
-
-const toggleMobileMenu = function() {
-    mobileMenuOpen.value = !mobileMenuOpen.value
-}
+let navToggle = useNavToggle()
 
 const displayIfMobileMenuEnabled = computed(() => {
-    return (mobileMenuOpen.value ? 'flex flex-col' : 'sm:hidden')
+    return (navToggle.open ? '' : 'hidden')
 })
-
-</script>
-
-<script>
-import ThemeSelector from '@/components/ThemeSelector.vue'
-import { SlashIcon } from '@heroicons/vue/16/solid'
-
-export default {
-    components: {
-        ThemeSelector, SlashIcon
-    }
-}
 
 </script>

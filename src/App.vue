@@ -1,6 +1,7 @@
 <template>
-    <div :class="`flex ${themeStore.current} text-ctp-text bg-ctp-base`">
+    <div :class="`flex ${themeStore.current} text-ctp-text bg-ctp-base h-screen`">
         <nav>
+            <MobileMenu/>
             <SideNavigation/>
         </nav>
         <main class="mt-8">
@@ -40,6 +41,7 @@ div a.router-link-exact-active::before {
 import { onMounted } from 'vue'
 import { useThemeSelector } from '@/store'
 import SideNavigation from '@/components/SideNavigation.vue'
+import MobileMenu from './components/MobileMenu.vue'
 
 const themeStore = useThemeSelector()
 

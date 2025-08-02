@@ -33,3 +33,12 @@ export const useThemeSelector = defineStore('theme', {
         }
     }
 })
+
+export const useNavToggle = defineStore('navToggle', {
+    state: () => ({ open: false }),
+    actions: {
+        toggle() {
+            this.open = !this.open
+        }
+    }
+})
