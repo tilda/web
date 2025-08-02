@@ -1,24 +1,13 @@
-# tilpm-2025
+# `flourite`
 
-## Project setup
-```
-npm install
-```
+til.pm's 2nd iteration (as far as the domain is concerned). Uses Vue 3/Vite with vue-router & pinia, combined with [Vercel Functions](https://vercel.com/docs/functions) for retrieving certain data.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Development
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Treat this as a normal project, no special setup should be required. This includes the Functions stuff as a Vite plugin takes care of that.
 
-### Lints and fixes files
-```
-npm run lint
-```
+tl;dr: `vite` / `npm run dev` works.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+Apache 2
