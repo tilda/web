@@ -1,10 +1,7 @@
 <template>
-    <div :class="`flex ${themeStore.current} text-ctp-text bg-ctp-base h-screen`">
-        <nav>
-            <MobileMenu/>
-            <SideNavigation/>
-        </nav>
-        <main class="mt-8">
+    <div :class="`${themeStore.current} flex text-ctp-text bg-ctp-base h-screen max-w-screen`">
+        <SideNavigation/>
+        <main class="pt-8">
             <router-view/>  
         </main>
     </div>

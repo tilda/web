@@ -1,12 +1,6 @@
 <template>
-    <span class="md:hidden sticky cursor-pointer z-999" v-on:click="toggleMobileMenu"><SlashIcon class="size-16 text-ctp-blue"/></span>
+    <span class="md:hidden sticky cursor-pointer z-99" v-on:click="toggleMobileMenu"><SlashIcon class="size-12 text-ctp-blue"/></span>
 </template>
-
-<style scoped>
-.z-999 {
-    z-index: 999;
-}
-</style>
 
 <script setup>
 import { useNavToggle } from '@/store'
