@@ -2,7 +2,7 @@
     <div @nav-toggle="toggleMobileMenu" class="flex absolute md:sticky flex-col drop-shadow-2xl justify-between mr-8 max-h-screen max-w-full ">
         <MobileMenu/>
         <nav :class="`${displayIfMobileMenuEnabled} flex-col pt-8 px-8 h-screen w-screen md:w-48 bg-ctp-crust text-ctp-overlay1`">
-            <span class="text-sm"><span class="text-til-gradient text-sm">tilda's</span> abode</span>
+            <span class="text-sm">tilda's abode</span>
             <ul class="font-bold">
                 <li><router-link to="/">about me</router-link></li>
                 <li><router-link to="/contact">contact</router-link></li>
@@ -11,14 +11,6 @@
         </nav>
     </div>
 </template>
-
-<style scoped>
-.text-til-gradient {
-    background: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
-    color: transparent;
-    background-clip: text;
-}
-</style>
 
 <script setup>
 import { computed } from 'vue'
