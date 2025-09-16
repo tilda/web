@@ -4,12 +4,8 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 export const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
 
-const getSystemDarkMode = () => {
-    return window.matchMedia('(prefers-color-scheme: dark)') // -> true if system is dark
-}
-
-const returnTargetTheme = (query) => {
-    return (query ? 'macchiato' : 'latte')
+const returnTargetTheme = () => {
+    return (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'macchiato' : 'latte')
 }
 
 export const useThemeSelector = defineStore('theme', {
@@ -18,7 +14,7 @@ export const useThemeSelector = defineStore('theme', {
         toggleSystem() {
             this.system = !this.system
             if (this.system) {
-                this.current = returnTargetTheme(getSystemDarkMode())
+                this.current = returnTargetTheme()
             } else if (this.current == 'macchiato') {
                 this.setLight()
             } else if (this.current == 'latte') {
