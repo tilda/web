@@ -1,5 +1,5 @@
 <template>
-    <span class="md:hidden sticky cursor-pointer z-99" v-on:click="toggleMobileMenu"><SlashIcon class="size-12 text-ctp-blue"/></span>
+    <span class="md:hidden sticky z-99"><SlashIcon v-on:click="toggleMobileMenu" class="size-12 text-ctp-blue cursor-pointer"/></span>
 </template>
 
 <script setup>

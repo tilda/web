@@ -1,7 +1,7 @@
 <template>
-    <div :class="`${themeStore.current} flex text-ctp-text bg-ctp-base h-screen max-w-screen`">
+    <div :class="`${themeStore.current} flex h-screen max-w-screen`">
         <SideNavigation/>
-        <main class="pt-8 md:max-w-3/5">
+        <main class="pt-8 md:max-w-3/5 mx-2 md:mx-0 mt-8 md:mt-0">
             <router-view/>  
         </main>
     </div>
@@ -35,13 +35,15 @@ div a.router-link-exact-active::before {
 </style>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, watch } from 'vue'
 import { useThemeSelector } from '@/store'
 import SideNavigation from '@/components/SideNavigation.vue'
 
 const themeStore = useThemeSelector()
 
 onMounted(() => {
+    applyTheme(themeStore.current)
+    
     const themeQuery = window.matchMedia('(prefers-color-scheme: dark)')
     const updateCurrentTheme = (theme) => {
         if (themeStore.system) {
@@ -49,8 +51,12 @@ onMounted(() => {
         }
     }
 
-    // will run function even if on manual, but get ignored due to the check in said function
-    updateCurrentTheme(themeQuery)
+    updateCurrentTheme(themeQuery) // runs regardless of setting, but ignored if not system theme
     themeQuery.addEventListener('change', updateCurrentTheme)
+})
+
+const applyTheme = (theme) => { document.body.className = `${theme} text-ctp-text bg-ctp-base` }
+watch(() => themeStore.current, (newTheme) => {
+    applyTheme(newTheme)
 })
 </script>
