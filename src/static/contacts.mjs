@@ -24,7 +24,7 @@ export default [
     },
     {
         "icon": "steam",
-        "url": "https://steamcommunity.com/id/thonker"
+        "url": "https://steamcommunity.com/profiles/76561198174587907"
     },
     {
         "icon": "twitch",
