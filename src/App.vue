@@ -1,9 +1,19 @@
 <template>
     <div :class="`${themeStore.current} flex h-screen max-w-screen`">
-        <SideNavigation/>
-        <main class="pt-8 md:max-w-3/5 mx-2 md:mx-0 mt-8 md:mt-0">
-            <router-view/>  
+        <nav>
+            <SideNavigation/>
+        </nav>
+        <main class="flex-1 md:max-w-3/5 md:mr-4 pt-8 mx-2 md:mx-0 mt-8 md:mt-0">
+            <div v-if="currentRoute.meta.heading" class="border-2 border-ctp-overlay0 p-4 mb-4">
+                <h1 v-if="currentRoute.meta.heading">{{ currentRoute.meta.heading }}</h1>
+                <span class="italic text-sm" v-if="currentRoute.meta.subheading">{{ currentRoute.meta.subheading }}</span>
+            </div>
+            <div v-if="currentRoute.meta.wip" class="border-2 border-ctp-overlay0 bg-ctp-yellow-900 p-4 mb-4">
+                <span>this page is currently work-in-progress. you may want to check back later!</span>
+            </div>
+            <router-view class="leading-8 text-justify"/>
         </main>
+        <!-- other side nav TBA -->
     </div>
 </template>
 
@@ -36,26 +46,28 @@ div a.router-link-exact-active::before {
 
 <script setup>
 import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useThemeSelector } from '@/store'
 import SideNavigation from '@/components/SideNavigation.vue'
 
 const themeStore = useThemeSelector()
+const currentRoute = useRoute()
+const applyTheme = (theme) => { document.body.className = `${theme} text-ctp-text bg-ctp-base` }
 
 onMounted(() => {
     applyTheme(themeStore.current)
     
     const themeQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    const updateCurrentTheme = (theme) => {
+    const updateThemeStore = (theme) => {
         if (themeStore.system) {
             themeStore.current = theme.matches ? 'macchiato' : 'latte'
         }
     }
 
-    updateCurrentTheme(themeQuery) // runs regardless of setting, but ignored if not system theme
-    themeQuery.addEventListener('change', updateCurrentTheme)
+    updateThemeStore(themeQuery) // runs regardless of setting, but ignored if not system theme
+    themeQuery.addEventListener('change', updateThemeStore)
 })
 
-const applyTheme = (theme) => { document.body.className = `${theme} text-ctp-text bg-ctp-base` }
 watch(() => themeStore.current, (newTheme) => {
     applyTheme(newTheme)
 })
