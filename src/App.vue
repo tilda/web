@@ -8,7 +8,7 @@
                 <h1 v-if="currentRoute.meta.heading">{{ currentRoute.meta.heading }}</h1>
                 <span class="italic text-sm" v-if="currentRoute.meta.subheading">{{ currentRoute.meta.subheading }}</span>
             </div>
-            <div v-if="currentRoute.meta.wip" class="border-2 border-ctp-overlay0 bg-ctp-yellow-900 p-4 mb-4">
+            <div v-if="currentRoute.meta.wip" class="border-2 border-ctp-overlay0 bg-ctp-yellow/25 p-4 mb-4">
                 <span>this page is currently work-in-progress. you may want to check back later!</span>
             </div>
             <router-view class="leading-8 text-justify"/>
