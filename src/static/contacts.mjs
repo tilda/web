@@ -21,7 +21,7 @@ export default [
         "url": "https://last.fm/user/imtilda"
     },
     {
-        "icon": osu,
+        "icon": siOsu,
         "url": "https://osu.ppy.sh/users/6233296"
     },
     {
