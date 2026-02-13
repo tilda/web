@@ -2,8 +2,7 @@
 its my website
 
 # about the api used in the about section
-the api known as `copiumapi` isn't planned to be open sourced at this time, since i feel like there would be no point.
-it is basically just a few http requests wrapped into 1 endpoint hosted on a cf worker, since doing these requests client-side would be very much unsafe. particularly for services like steam's web api and lastfm that require api keys to get the information used.
+2/13/26: my excuse is that i wrote it 5+ years ago, didn't know how to handle secrets properly, so i just left it as a separate project on a cf worker. very slowly working on a rewrite that will actually have this checked in, see flourite branch
 
 # dev notes
 install deps: `npm install`
