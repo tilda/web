@@ -1,41 +1,43 @@
 /* eslint-disable no-unused-vars */
+import { siAnilist, siGithub, siGitlab, siLastdotfm, siOsu, siSteam, siTwitch, siTwitter, siYoutube } from 'simple-icons'
+
 export default [
     {
-        "icon": "anilist",
+        "icon": siAnilist,
         "url": "https://anilist.co/user/tda"
     },
     {
-        "icon": "github",
+        "icon": siGithub,
         "url": "https://github.com/tilda"
     },
     {
-        "icon": "gitlab",
+        "icon": siGitlab,
         "url": "https://gitlab.com/wontfix"
     },
     {
         // SIDENOTE: this is called last.fm in the object
         // but that doesn't work when you're using require so oops
-        "icon": "lastdotfm",
+        "icon": siLastdotfm,
         "url": "https://last.fm/user/imtilda"
     },
     {
-        "icon": "osu",
+        "icon": osu,
         "url": "https://osu.ppy.sh/users/6233296"
     },
     {
-        "icon": "steam",
+        "icon": siSteam,
         "url": "https://steamcommunity.com/profiles/76561198174587907"
     },
     {
-        "icon": "twitch",
+        "icon": siTwitch,
         "url": "https://twitch.tv/imtilda"
     },
     {
-        "icon": "twitter",
+        "icon": siTwitter,
         "url": "https://twitter.com/imtilda"
     },
     {
-        "icon": "youtube",
+        "icon": siYoutube,
         "url": "https://www.youtube.com/channel/UCI3mmMbWRHo4VI_sKDfqBaQ"
     },
 ]

@@ -25,9 +25,9 @@ export default {
             required: true,
         }
     },
-    data: function() {
+    data() {
         return {
-            icon: require(`simple-icons/icons/${this.method.icon}`)
+            icon: this.method.icon
         }
     }
 }
