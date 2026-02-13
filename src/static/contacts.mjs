@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { siAnilist, siGithub, siGitlab, siLastdotfm, siOsu, siSteam, siTwitch, siTwitter, siYoutube } from 'simple-icons'
+import { siAnilist, siBluesky, siGithub, siLastdotfm, siOsu, siSteam, siTwitch, siYoutube } from 'simple-icons'
 
 export default [
     {
@@ -7,12 +7,12 @@ export default [
         "url": "https://anilist.co/user/tda"
     },
     {
-        "icon": siGithub,
-        "url": "https://github.com/tilda"
+        "icon": siBluesky,
+        "url": "https://bsky.app/profile/til.pm"
     },
     {
-        "icon": siGitlab,
-        "url": "https://gitlab.com/wontfix"
+        "icon": siGithub,
+        "url": "https://github.com/tilda"
     },
     {
         // SIDENOTE: this is called last.fm in the object
@@ -31,10 +31,6 @@ export default [
     {
         "icon": siTwitch,
         "url": "https://twitch.tv/imtilda"
-    },
-    {
-        "icon": siTwitter,
-        "url": "https://twitter.com/imtilda"
     },
     {
         "icon": siYoutube,
