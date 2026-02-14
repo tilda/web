@@ -14,6 +14,7 @@
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^4.4.1",
     "postcss": "^8",
+    "simple-icons": "^16.8.0",
     "tailwindcss": "^4",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
