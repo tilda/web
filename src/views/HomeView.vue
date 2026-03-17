@@ -5,6 +5,7 @@
             for as long as i can remember, computers have been my favorite thing on the planet (being basically born into them); my career's mission statement is making a net positive change in the world using my work.<br/>
             my current claim to fame is holding a volunteer staff position as "Beatmap Nominator" in the <a href="https://osu.ppy.sh/users/6233296">community-based rhythm game <i>osu!</i></a>, helping with official leaderboard support and other various duties.<br/>
         </p>
+
         <h2>programming & projects</h2>
         <ol class="list-disc">
             <li>
@@ -13,33 +14,30 @@
                 the bot was discontinued in early 2022 due to Discord's platform limitations quickly catching up with the old codebase.
             </li>
             <li>
-                i've transitioned to a primary focus on frontend work for personal projects, as i found myself enjoying the design aspect much more.<br/>
-                most of that experience has been with <a href="https://vuejs.org">Vue.js</a>, which i learned to appreciate the most out of most "mainstream" frameworks.
-            </li>
-            <li>
-                i haven't managed to get many other projects off the ground unfortunately - this is something i want to change.
-                my personal projects tend to be very interest-driven (whatever i'm obsessed with is usually the thing i'm building for).<br/>
-                the main project i'm planning for (expanding) is <a href="https://pcr.til.pm">PriConne Mapping</a>, but there's hopefully more on the way!
+                since then, i admittedly haven't been working as hard on any other projects (as much as i'd like to, the burnout hit like a truck).<br/>
+                i also slowly transitioned to focus on frontend, mainly using <a href="https://vuejs.org">Vue.js</a> - a framework i've been enamored with ever since i discovered it.<br/>
+                my hope is that in the future, i'll be motivated enough to once again pursue and ship projects i'm confident with!
             </li>
         </ol>
         <h2>other hobbies</h2>
         <ol class="list-disc">
             <li>
-                rhythm games are my current foremost favorite thing. i registered for an account on <i>osu!</i> in 2015 since "it's a free game,"
-                but eventually discovered i'm just a really big fan of what <i>osu!</i> and its ilk have to offer. that eventually lead to me discovering games such as <i>beatmania IIDX</i>
-                through the rhythm game community and its original soundtrack. <i>IIDX</i> is my current favorite <abbr title="vertical scrolling rhythm game">VSRG</abbr> even if i'm not very good at it
-                (as of November 2025, you can put me on a lower-end <i>NORMAL</i> and i might still fail).
+                rhythm games are my current foremost favorite thing. i registered for an account on <a href="https://osu.ppy.sh"><i>osu!</i></a> in 2015 since "it's a free game,"
+                but also discovered i'm just a really big fan of what <i>osu!</i> had to offer.<br/>
+                eventually, i found its contemporaries such as <i>beatmania IIDX</i> through the rhythm game community and original soundtracks.<br/>
+                my current favorite <abbr title="vertical scrolling rhythm game">VSRG</abbr> is <i>IIDX</i>, even if i'm not very good at it!
             </li>
             <li>
-                anime has quite a strong place in my heart - although i was introduced to it much earlier, my first solo watch in late 2019 (over winter break, fitting for the show) was
-                <a href="https://https://anilist.co/anime/98444/LaidBack-Camp/"><i>Laid-Back Camp</i></a>.
+                although i was introduced to anime much earlier, my first solo watch in 2019 (over winter break, quite fitting) was
+                <a href="https://https://anilist.co/anime/98444/LaidBack-Camp/"><i>Laid-Back Camp</i></a>. this shaped my favorite genres to be "slice of life" adjacent almost immediately.<br/>
+                i do try to appreciate other genres though, for example i loved the <a href="https://anilist.co/anime/97986/Made-in-Abyss/"><i>Made in Abyss</i></a> series.
             </li>
             <li>
-                also video games as a medium are great. i was raised on Valve's <i>Half-Life</i> and <i>Portal</i> series (as well as <i>Minecraft</i>, sometimes modded).<br/>
+                video games as a medium; having raised myself on Valve's <i>Half-Life</i> and <i>Portal</i> series (as well as Mojang's <i>Minecraft</i>).<br/>
                 a lot of my time is currently spent with Cygames' franchises*, such as <a href="https://priconne-redive.jp/"><i>Princess Connect! Re: Dive</i> (Japanese)</a> and <a href="https://umamusume.com"><i>Umamusume: Pretty Derby</i></a>.<br/>
                 <small>
-                    *big disclaimer: gacha games have many issues; too many to state here! they are not for everyone!<br/>
-                    i set reasonable limits (time, money, and other factors) for myself when playing ^^ 
+                    *disclaimer: gacha games have many issues; too many to state here! they are not for everyone!<br/>
+                    i set reasonable limits for myself, and suggest you do the same if playing them
                 </small>
             </li>
         </ol>
