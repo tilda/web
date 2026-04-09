@@ -3,7 +3,7 @@
         <nav>
             <SideNavigation/>
         </nav>
-        <main class="flex-1 md:max-w-3/5 md:mr-4 pt-8 mx-2 md:mx-0 mt-8 md:mt-0">
+        <main class="flex-1 md:max-w-3/5 md:mr-4 pt-8 mx-4 md:mx-0 mt-8 md:mt-0">
             <div v-if="currentRoute.meta.heading" class="border-2 border-ctp-overlay0 p-4 mb-4">
                 <h1 v-if="currentRoute.meta.heading">{{ currentRoute.meta.heading }}</h1>
                 <span class="italic text-sm" v-if="currentRoute.meta.subheading">{{ currentRoute.meta.subheading }}</span>
