@@ -38,7 +38,6 @@ export default async (req) => {
                 headers: {
                     'Netlify-Vary': 'query=page',
                     'Netlify-CDN-Cache-Control': 'public, max-age=300, stale-while-revalidate=30, durable',
-                    'Content-Type': 'application/json'
                 }
             })
         } else {
