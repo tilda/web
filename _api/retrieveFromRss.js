@@ -12,7 +12,7 @@ export default async (req) => {
         const MAX_PAGE_SIZE = 6
 
         const result = await fetch('https://tilda.bearblog.dev/feed/', {
-            'headers': {
+            headers: {
                 'User-Agent': 'flourite (github.com/tilda/web, mailto:me@til.pm)',
                 'Accept': 'application/atom+xml'
             }
@@ -30,25 +30,26 @@ export default async (req) => {
                 throw new Error(`Requested page ${pageParam} does not currently exist`)
             }
 
-            return new Response(JSON.stringify({
+            return Response.json({
                 'current_page': pageParam,
                 'max_pages': PAGE_LIMIT,
                 'items': feed.entries.slice((pageParam - 1) * MAX_PAGE_SIZE, pageParam * MAX_PAGE_SIZE)
-            }), {
-                'headers': {
+            }, {
+                headers: {
                     'Netlify-Vary': 'query=page',
-                    'Netlify-CDN-Cache-Control': 'public, max-age=300, stale-while-revalidate=30, durable'
+                    'Netlify-CDN-Cache-Control': 'public, max-age=300, stale-while-revalidate=30, durable',
+                    'Content-Type': 'application/json'
                 }
             })
         } else {
-            return new Response(null, { status: 204 })
+            return Response(null, { status: 204 })
         }
     } catch (err) {
         console.log(err)
 
-        return new Response(JSON.stringify({
+        return Response.json({
             'error': err.toString()
-        }), {
+        }, {
             status: 400
         })
     }
