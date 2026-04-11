@@ -31,7 +31,6 @@ export default async (req) => {
             }
 
             return new Response(JSON.stringify({
-                'status': 'ok',
                 'current_page': pageParam,
                 'max_pages': PAGE_LIMIT,
                 'items': feed.entries.slice((pageParam - 1) * MAX_PAGE_SIZE, pageParam * MAX_PAGE_SIZE)
@@ -48,7 +47,6 @@ export default async (req) => {
         console.log(err)
 
         return new Response(JSON.stringify({
-            'status': 'err',
             'error': err.toString()
         }), {
             status: 400
