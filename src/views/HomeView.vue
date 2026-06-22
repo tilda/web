@@ -35,9 +35,9 @@
         <h2>what i've shipped</h2>
         <ol class="list-disc">
             <li>
-                starting in early 2017, i wrote & ran a small Discord bot named <a href="https://github.com/lolbot-project"><span class="italic">lolbot</span></a> in Python using the discord.py library.
+                from january 2017 to february 2022, i wrote & ran a small Discord bot named <a href="https://github.com/lolbot-project"><span class="italic">lolbot</span></a> in Python using the discord.py library.
                 its main mission was enhancing conversations by bridging fun internet services such as cat(girl) pictures, which was provided to around 700 servers at its peak.
-                the bot was discontinued in early 2022 due to platform requirements and limitations catching up with the old codebase.
+                the bot was discontinued due to platform requirements and limitations catching up with the old codebase.
             </li>
             <li>
                 since then... not much (besides this website)! i was so invested in <i>lolbot</i> at the time that its forced demise burnt me out.<br/>
