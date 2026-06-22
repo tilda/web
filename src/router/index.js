@@ -29,7 +29,7 @@ const routes = [
         component: BlogView,
         meta: {
             heading: "blog posts",
-            subheading: "when i want to type words, they might go here!",
+            subheading: "customary various ramblings",
             wip: true
         }
     }
