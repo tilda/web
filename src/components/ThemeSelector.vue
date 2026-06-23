@@ -26,8 +26,7 @@
             @click="themeStore.toggleSystem"
             @keyup.enter="themeStore.toggleSystem"
         >
-            (<span v-if="themeStore.system">using</span
-            ><span v-else>overriding</span>
+            (<span>{{ themeStore.system ? 'using' : 'overriding' }}</span> 
             your system theme)
         </button>
     </div>
