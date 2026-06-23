@@ -1,6 +1,6 @@
 # `flourite`
 
-til.pm's 2nd iteration (as far as the domain is concerned). Uses Vue 3/Vite with vue-router & pinia, combined with [Vercel Functions](https://vercel.com/docs/functions) for retrieving certain data.
+til.pm's 2nd iteration (as far as the domain is concerned).  Vue 3/Vite with vue-router & pinia, plus [Netlify Functions](https://docs.netlify.com/build/functions/overview/) for anything required server-side.
 
 ## Development
 
