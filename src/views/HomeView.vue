@@ -22,7 +22,7 @@
                 </tr>
                 <tr>
                     <th>anime</th>
-                    <td><a href="https://anilist.co/anime/98444"><i>Laid-Back Camp</i></a>, <a href="https://anilist.co/anime/99900"><i>Pompo: The Cinéphile</i></a></td>
+                    <td><a href="https://anilist.co/anime/98444"><i>Laid-Back Camp</i></a>, <a href="https://anilist.co/anime/99900"><i>Pompo: The Cinéphile</i></a>, <a href="https://anilist.co/anime/97986"><i>Made in Abyss</i></a></td>
                 </tr>
             </tbody>
         </table>
