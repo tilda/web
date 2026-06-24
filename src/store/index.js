@@ -1,11 +1,13 @@
-import { defineStore, createPinia } from 'pinia'
+import { createPinia, defineStore } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 export const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
 
 const returnTargetTheme = () => {
-    return (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'macchiato' : 'latte')
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'macchiato'
+        : 'latte'
 }
 
 export const useThemeSelector = defineStore('theme', {
@@ -30,9 +32,9 @@ export const useThemeSelector = defineStore('theme', {
             if (!this.system) {
                 this.current = 'macchiato'
             }
-        }
+        },
     },
-    persist: true
+    persist: true,
 })
 
 export const useNavToggle = defineStore('navToggle', {
@@ -40,6 +42,6 @@ export const useNavToggle = defineStore('navToggle', {
     actions: {
         toggle() {
             this.open = !this.open
-        }
-    }
+        },
+    },
 })

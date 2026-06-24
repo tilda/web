@@ -1,33 +1,33 @@
 {
-  "name": "flourite",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vite preview",
-    "build": "vite build",
-    "dev": "vite"
-  },
-  "dependencies": {
-    "@catppuccin/tailwindcss": "1.0.0",
-    "@fontsource-variable/radio-canada": "^5.2.10",
-    "@heroicons/vue": "^2.2.0",
-    "@netlify/functions": "^5.2.0",
-    "autoprefixer": "^10",
-    "axios": "^1.16.1",
-    "feedsmith": "^2.9.1",
-    "pinia": "^3.0.3",
-    "pinia-plugin-persistedstate": "^4.4.1",
-    "postcss": "^8",
-    "simple-icons": "^16.8.0",
-    "tailwindcss": "^4",
-    "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.4.14",
-    "@netlify/vite-plugin": "^2.11.3",
-    "@tailwindcss/vite": "^4.2.2",
-    "@vitejs/plugin-vue": "^6.0.5",
-    "vite": "^8.0.8"
-  }
+    "name": "flourite",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vite preview",
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "dependencies": {
+        "@catppuccin/tailwindcss": "1.0.0",
+        "@fontsource-variable/radio-canada": "^5.2.10",
+        "@heroicons/vue": "^2.2.0",
+        "@netlify/functions": "^5.2.0",
+        "autoprefixer": "^10",
+        "axios": "^1.16.1",
+        "feedsmith": "^2.9.1",
+        "pinia": "^3.0.3",
+        "pinia-plugin-persistedstate": "^4.4.1",
+        "postcss": "^8",
+        "simple-icons": "^16.8.0",
+        "tailwindcss": "^4",
+        "vue": "^3.2.13",
+        "vue-router": "^4.0.3"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.5.1",
+        "@netlify/vite-plugin": "^2.11.3",
+        "@tailwindcss/vite": "^4.2.2",
+        "@vitejs/plugin-vue": "^6.0.5",
+        "vite": "^8.0.8"
+    }
 }

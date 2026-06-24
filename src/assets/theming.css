@@ -1,6 +1,6 @@
-@import 'tailwindcss';
-@import '@catppuccin/tailwindcss/macchiato.css';
-@import '@fontsource-variable/radio-canada/wght.css';
+@import "tailwindcss";
+@import "@catppuccin/tailwindcss/macchiato.css";
+@import "@fontsource-variable/radio-canada/wght.css";
 
 /* Font choice */
 /* TBD: Does this make sense? I might want to find something a little more brand-adjacent */
@@ -9,7 +9,12 @@
 }
 
 /* Override tailwind resets on these elements */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: revert;
     font-weight: revert;
 }
@@ -17,7 +22,12 @@ a {
     text-decoration: revert;
 }
 
-.mt-revert h1, .mt-revert h2, .mt-revert h3, .mt-revert h4, .mt-revert h5, .mt-revert h6 {
+.mt-revert h1,
+.mt-revert h2,
+.mt-revert h3,
+.mt-revert h4,
+.mt-revert h5,
+.mt-revert h6 {
     /* Allows main content to keep a margin on headings,
      * while not applying margins to other parts of the UI that have them.
      * Used in src/App.vue#L14.
@@ -50,4 +60,3 @@ h6::before {
     content: "###### ";
     color: var(--color-ctp-overlay0);
 }
-
