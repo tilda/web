@@ -1,5 +1,5 @@
 <template>
-    <span class="md:hidden sticky z-99">
+    <span class="md:hidden sticky z-99 pr-4">
         <SlashIcon @click="toggleMobileMenu" class="size-12 text-ctp-blue cursor-pointer" />
     </span>
 </template>

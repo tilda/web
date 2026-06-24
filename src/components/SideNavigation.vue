@@ -1,11 +1,12 @@
 <template>
-    <div
-        @nav-toggle="toggleMobileMenu"
-        class="flex fixed md:sticky md:top-0 md:self-start flex-col drop-shadow-2xl justify-between mr-8 max-h-screen max-w-full w-screen md:w-auto bg-ctp-crust md:bg-transparent">
-        <MobileMenu />
+    <div @nav-toggle="toggleMobileMenu"
+        class="flex fixed md:sticky md:top-0 md:self-start flex-col drop-shadow-2xl justify-between mr-8 max-h-screen max-w-full w-screen md:w-auto bg-ctp-crust">
+        <div class="inline-flex items-center">
+            <MobileMenu />
+            <span class="text-sm text-ctp-mauve md:pt-8 md:pl-8">tilda's abode</span>
+        </div>
         <div
-            :class="`${displayIfMobileMenuEnabled} flex-col pt-2 md:pt-8 px-8 h-screen w-screen md:w-56 bg-ctp-crust text-ctp-overlay1`">
-            <span class="text-sm text-ctp-mauve">tilda's abode</span>
+            :class="`${displayIfMobileMenuEnabled} flex-col pt-2 md:pt-4 px-8 h-screen w-screen md:w-56 bg-ctp-crust text-ctp-overlay1`">
             <ul class="font-bold">
                 <li v-for="route in router.options.routes" :key="route.name">
                     <router-link :to="route.path">{{ route.name }} </router-link>
