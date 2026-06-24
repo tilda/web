@@ -6,9 +6,9 @@
         <main class="flex-1 md:max-w-3/5 md:mr-4 pt-8 md:pl-8 mx-4 md:mx-0 mt-8 md:mt-0 mb-4">
             <div v-if="currentRoute.meta.heading" class="border-2 border-ctp-overlay0 p-4">
                 <h1 v-if="currentRoute.meta.heading">{{ currentRoute.meta.heading }}</h1>
-                <span class="italic text-sm" v-if="currentRoute.meta.subheading"
-                    >{{ currentRoute.meta.subheading }}</span
-                >
+                <span class="italic text-sm" v-if="currentRoute.meta.subheading">
+                    {{ currentRoute.meta.subheading }}
+                </span>
             </div>
             <div v-if="currentRoute.meta.wip" class="border-2 border-ctp-overlay0 bg-ctp-yellow/25 p-4">
                 <span>this page is currently work-in-progress. you may want to check back later!</span>
@@ -29,6 +29,7 @@
         transform: translateX(-200%);
         opacity: 0%;
     }
+
     to {
         transform: translateX(0%);
         opacity: 100%;
@@ -38,6 +39,7 @@
 div a.router-link-exact-active {
     text-decoration: solid underline;
 }
+
 div a.router-link-exact-active::before {
     display: inline-block;
     content: "↗";

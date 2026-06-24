@@ -3,7 +3,7 @@
 @import "@fontsource-variable/radio-canada/wght.css";
 
 /* Font choice */
-/* TBD: Does this make sense? I might want to find something a little more brand-adjacent */
+/* TODO: Does this make sense? I might want to find something a little more brand-adjacent */
 :root {
     --font-sans: "Radio Canada Variable", system-ui, sans-serif;
 }
@@ -18,6 +18,7 @@ h6 {
     font-size: revert;
     font-weight: revert;
 }
+
 a {
     text-decoration: revert;
 }
@@ -40,23 +41,33 @@ h1::before {
     content: "# ";
     color: var(--color-ctp-overlay0);
 }
+
 h2::before {
     content: "## ";
     color: var(--color-ctp-overlay0);
 }
+
 h3::before {
     content: "### ";
     color: var(--color-ctp-overlay0);
 }
+
 h4::before {
     content: "#### ";
     color: var(--color-ctp-overlay0);
 }
+
 h5::before {
     content: "##### ";
     color: var(--color-ctp-overlay0);
 }
+
 h6::before {
     content: "###### ";
     color: var(--color-ctp-overlay0);
+}
+
+/* Lists look kinda weird on mobile if we don't do this */
+ol {
+    list-style-position: inside;
 }

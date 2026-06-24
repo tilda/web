@@ -6,8 +6,8 @@
             <span class="text-sm text-ctp-mauve md:pt-8 md:pl-8">tilda's abode</span>
         </div>
         <div
-            :class="`${displayIfMobileMenuEnabled} flex-col pt-2 md:pt-4 px-8 h-screen w-screen md:w-56 bg-ctp-crust text-ctp-overlay1`">
-            <ul class="font-bold">
+            :class="`${displayIfMobileMenuEnabled} flex flex-col pt-8 md:pt-4 px-8 content-between h-screen w-screen md:w-56 bg-ctp-crust text-ctp-overlay1`">
+            <ul class="font-bold text-2xl md:text-base">
                 <li v-for="route in router.options.routes" :key="route.name">
                     <router-link :to="route.path">{{ route.name }} </router-link>
                     <span v-if="route.meta.wip" class="pl-2" title="(work-in-progress page)">⚠️</span>
