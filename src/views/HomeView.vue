@@ -65,19 +65,5 @@
                 point!
             </li>
         </ol>
-        <h2>what i've shipped</h2>
-        <ol class="list-disc">
-            <li>
-                from january 2017 to february 2022, i wrote & ran a small Discord bot named
-                <a href="https://github.com/lolbot-project"><i>lolbot</i></a>
-                in Python using the discord.py library. its main mission was enhancing conversations by bridging fun
-                internet services such as cat(girl) pictures, which was provided to around 700 servers at its peak. the
-                bot was discontinued due to platform requirements and limitations catching up with the old codebase.
-            </li>
-            <li>
-                since then... not much (besides this website)!<br>
-                <i>eventually there will be more to say here!</i>
-            </li>
-        </ol>
     </div>
 </template>
