@@ -1,3 +1,4 @@
+<!-- biome-ignore-all lint/a11y/useValidAnchor: biomejs/biome#10661 -->
 <template>
     <div>
         <p>
@@ -30,9 +31,9 @@
                 <tr>
                     <th>anime</th>
                     <td>
-                        <a href="https://anilist.co/anime/98444"><i>Laid-Back Camp</i></a>,
-                        <a href="https://anilist.co/anime/99900"><i>Pompo: The Cinéphile</i></a>,
-                        <a href="https://anilist.co/anime/97986"><i>Made in Abyss</i></a>
+                        <a :href="anilist(98444)"><i>Laid-Back Camp</i></a>,
+                        <a :href="anilist(99900)"><i>Pompo: The Cinéphile</i></a>,
+                        <a :href="anilist(97986)"><i>Made in Abyss</i></a>
                     </td>
                 </tr>
             </tbody>
@@ -60,10 +61,16 @@
                 the internet has... a lot of anime culture. i got used to it and stuck with it to this very day.
             </li>
             <li>
-                in the future, i'd like to try things like amateur photography and writing.<br>
+                in the future, i'd like to try things like amateur photography and (more) writing.<br>
                 other people doing them brought untold amounts of joy to me; i think it's only fair to give back at some
                 point!
             </li>
         </ol>
     </div>
 </template>
+
+<script setup>
+const anilist = (id, type = 'anime') => {
+    return `https://anilist.co/${type}/${id}`
+}
+</script>
