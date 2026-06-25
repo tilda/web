@@ -4,8 +4,8 @@
             welcome to my portfolio of sorts! for as long as i can remember, computers have been my favorite thing on
             the planet (having been basically born into them); my career's mission statement is making a net positive
             change in the world using my work.<br>
-            currently, my main focus is pursuing an associate's in cybersecurity at
-            <a href="https://nctc.edu">North Central Texas College</a>, graduating in december 2026.
+            i'm currently pursuing an associate's in cybersecurity at
+            <a href="https://nctc.edu">North Central Texas College</a>, with an estimated graduation date in december 2026.
         </p>
         <h2>my favorite...</h2>
         <table class="indent-2">
@@ -56,8 +56,8 @@
             <li>
                 if you can't tell from the above favorites list, i'm a self-professed <a
                     href="https://en.wiktionary.org/wiki/weeaboo#English">weeb</a>.<br>
-                growing up, we didn't have cable tv. the internet where i already spent a lot of time was full of anime
-                culture. at that point, it only felt natural to embrace what i had seen - so that's how i got here.
+                growing up, we didn't have cable tv. of course i still caught glimpses of spongebob episodes and such, but
+                the internet has... a lot of anime culture. i got used to it and stuck with it to this very day.
             </li>
             <li>
                 in the future, i'd like to try things like amateur photography and writing.<br>
