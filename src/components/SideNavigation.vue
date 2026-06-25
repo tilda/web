@@ -1,13 +1,13 @@
 <template>
-    <div @nav-toggle="toggleMobileMenu"
-        class="flex fixed md:sticky md:top-0 md:self-start flex-col drop-shadow-2xl justify-between mr-8 max-h-screen max-w-full w-screen md:w-auto bg-ctp-crust">
+    <nav @nav-toggle="toggleMobileMenu"
+        class="flex fixed md:top-0 md:self-start flex-col drop-shadow-2xl justify-between mr-8 max-h-screen max-w-full w-screen md:w-auto bg-ctp-crust">
         <div class="inline-flex items-center">
             <MobileMenu />
             <span class="text-sm text-ctp-mauve md:pt-8 md:pl-8">tilda's abode</span>
         </div>
         <div
             :class="`${displayIfMobileMenuEnabled} flex flex-col pt-8 md:pt-4 px-8 content-between h-screen w-screen md:w-56 bg-ctp-crust text-ctp-overlay1`">
-            <ul class="font-bold text-2xl md:text-base">
+            <ul class="font-bold text-4xl md:text-base">
                 <li v-for="route in router.options.routes" :key="route.name">
                     <router-link :to="route.path">{{ route.name }} </router-link>
                     <span v-if="route.meta.wip" class="pl-2" title="(work-in-progress page)">⚠️</span>
@@ -15,7 +15,7 @@
             </ul>
             <ThemeSelector class="mt-auto mb-8" />
         </div>
-    </div>
+    </nav>
 </template>
 
 <script setup>
