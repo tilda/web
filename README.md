@@ -1,4 +1,4 @@
-# `flourite`
+# `fluorite`
 
 til.pm's 2nd iteration (as far as the domain is concerned).  Vue 3/Vite with vue-router & pinia, plus [Netlify Functions](https://docs.netlify.com/build/functions/overview/) for anything required server-side.
 

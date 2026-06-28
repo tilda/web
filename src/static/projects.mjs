@@ -31,7 +31,7 @@ export default [
         (much of this was influenced by [too](https://osu.ppy.sh/users/12196931), who did something similar when they were BN and led me down a rabbit hole)`
     },
     {
-        name: 'flourite',
+        name: 'fluorite',
         link: 'https://github.com/tilda/web',
         date: 'June 2026',
         skills: [
@@ -41,7 +41,6 @@ export default [
         ],
         description: `the website you're looking at; my first project with Vue 3 and Vite.
         i wanted something that could really show who i am, which ended up being beyond the scope of the previous Vue 2 site.
-        it took over a year to gain the motivation to finally fulfill my vision. i'm very happy with it!
-        the only problem is the correct spelling being "fluorite." the o and u are switched, but i found that out too late.`
+        it took over a year to gain the motivation to finally fulfill my vision. i'm very happy with it!`
     }
 ]
