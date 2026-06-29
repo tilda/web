@@ -20,15 +20,17 @@ export default [
         link: 'https://github.com/tilda/nom-sheet',
         date: 'June 2024',
         skills: [
-            'Google Workspace (Apps Script, Sheets)',
+            'Google Workspace (Sheets)',
+            'JavaScript (Apps Script)',
             'osu! API',
             'OAuth2',
             'Project Management'
         ],
-        description: `one of the many things a "Beatmap Nominator" on _osu!_ needs is a way to keep track of their duties. oftentimes, we tend to go for kanban boards in Trello, and notepad-style lists on profile pages.
-        i chose a spreadsheet, because i knew i could automate it (and it would be fun!).
+        description: `one of the many things a "Beatmap Nominator" on <i>osu!</i> needs is a way to keep track of their duties. oftentimes, you'll get a Trello board or a notepad-style list somewhere.
+        neither of those truly felt maintainable for me, so i went to automate a spreadsheet instead.
         80 percent of Apps Script is knowing some JavaScript, the other 20 percent is reading Google's documentation to figure out what obscure proprietary function you need for something.
         (much of this was influenced by [too](https://osu.ppy.sh/users/12196931), who did something similar when they were BN and led me down a rabbit hole)`
+        // used <i> tag instead of */_ because markdown-it converts those to <em>
     },
     {
         name: 'fluorite',
