@@ -17,6 +17,7 @@ import MarkdownIt from 'markdown-it'
 
 const md = MarkdownIt({
     breaks: true,
+    html: true
 })
 const props = defineProps({
     name: {
