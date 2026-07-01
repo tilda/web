@@ -41,13 +41,14 @@
         </table>
         <p class="text-sm">
             *: Konami's arcade rhythm games. as of May 2026, i have played <i>beatmania IIDX</i>, <i>jubeat</i>,
-            <i>pop'n music</i>, and <i>SOUND VOLTEX</i>. out of those three, <i>IIDX</i> remains my favorite.<br>
+            <i>pop'n music</i>, and <i>SOUND VOLTEX</i>. out of those four, <i>IIDX</i> remains my favorite.<br>
             **: Cygames' gacha games that would be better if they <em>weren't</em> gacha games.
         </p>
         <h2>hobbies</h2>
         <ol class="list-disc">
             <li>
-                i cannot understate how much i like computers as a creative outlet. i think they're wonderful things.<br>
+                i cannot understate how much i like computers as a creative outlet. i think they're wonderful
+                things.<br>
                 my interest has been persistently kept in Linux system administration (desktop & server). i also enjoy
                 programming at some points, mostly engaging in full-stack development with Python and Vue.js. it's been
                 a lot of fun!
