@@ -17,9 +17,9 @@ export const useThemeSelector = defineStore('theme', {
             this.system = !this.system
             if (this.system) {
                 this.current = returnTargetTheme()
-            } else if (this.current == 'macchiato') {
+            } else if (this.current === 'macchiato') {
                 this.setLight()
-            } else if (this.current == 'latte') {
+            } else if (this.current === 'latte') {
                 this.setDark()
             }
         },

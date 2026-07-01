@@ -25,7 +25,7 @@
                 <tr>
                     <th>multimedia franchises**</th>
                     <td>
-                        <a href="https://priconne-redive.jp/"><i>Princess Connect!</i></a>,
+                        <a href="https://priconne-redive.jp/"><i>Princess Connect! Re: Dive</i></a>,
                         <a href="https://umamusume.com"><i>Umamusume</i></a>
                     </td>
                 </tr>
@@ -42,7 +42,8 @@
         <p class="text-sm">
             *: Konami's arcade rhythm games. as of May 2026, i have played <i>beatmania IIDX</i>, <i>jubeat</i>,
             <i>pop'n music</i>, and <i>SOUND VOLTEX</i>. out of those four, <i>IIDX</i> remains my favorite.<br>
-            **: Cygames' gacha games that would be better if they <em>weren't</em> gacha games.
+            **: pretending they <em>aren't</em> gacha games!<br>
+            fun fact: i do not know japanese
         </p>
         <h2>hobbies</h2>
         <ol class="list-disc">
@@ -50,8 +51,8 @@
                 i cannot understate how much i like computers as a creative outlet. i think they're wonderful
                 things.<br>
                 my interest has been persistently kept in Linux system administration (desktop & server). i also enjoy
-                programming at some points, mostly engaging in full-stack development with Python and Vue.js. it's been
-                a lot of fun!
+                programming at some points - mostly in frontend, but i've done some stuff on the backend side too.
+                it's been a lot of fun!
             </li>
             <li>
                 if you can't tell from the above favorites list, i'm a self-professed

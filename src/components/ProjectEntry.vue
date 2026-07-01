@@ -4,7 +4,7 @@
         <h1 v-if="link"><a :href="link">{{ name }}</a></h1>
         <h1 v-else>{{ name }}</h1>
         <div class="flex flex-row text-sm mt-2">
-            <span>{{ formatList(skills) }}</span>
+            <span class="max-w-64">{{ formatList(skills) }}</span>
             <span class="mx-auto"></span>
             <span class="font-bold">{{ date }}</span>
         </div>
