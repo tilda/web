@@ -1,6 +1,5 @@
 <template>
     <div>
-        <!-- biome-ignore lint/a11y/useValidAnchor: biomejs/biome#10661 -->
         <h1 v-if="link"><a :href="link">{{ name }}</a></h1>
         <h1 v-else>{{ name }}</h1>
         <div class="flex flex-col md:flex-row text-sm mt-2">

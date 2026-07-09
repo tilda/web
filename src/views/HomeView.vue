@@ -1,4 +1,3 @@
-<!-- biome-ignore-all lint/a11y/useValidAnchor: biomejs/biome#10661 -->
 <template>
     <div>
         <p>
