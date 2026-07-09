@@ -14,7 +14,6 @@
         "@netlify/functions": "^5.2.0",
         "autoprefixer": "^10",
         "axios": "^1.16.1",
-        "feedsmith": "^2.9.1",
         "markdown-it": "^14.2.0",
         "pinia": "^3.0.3",
         "pinia-plugin-persistedstate": "^4.4.1",
