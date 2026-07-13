@@ -11,7 +11,7 @@
                 @keyup.enter="themeStore.setDark" />
         </button>
         <button type="button" tabindex="0" class="text-sm md:text-xs italic block cursor-pointer"
-            @click="themeStore.toggleSystem" @keyup.enter="themeStore.toggleSystem">
+            @click="themeStore.toggleSystem">
             (<span>{{ themeStore.system ? 'using' : 'overriding' }}</span>
             system theming)
         </button>
