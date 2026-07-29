@@ -51,4 +51,9 @@ const router = createRouter({
     routes,
 })
 
+router.beforeEach((to) => {
+    const postTildeTitle = to.path !== '/' ? `/${to.name}` : ''
+    document.title = `~${postTildeTitle}`
+})
+
 export default router
