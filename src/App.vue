@@ -1,19 +1,25 @@
 <template>
-    <div class="flex h-screen max-w-screen">
-        <SideNavigation />
-        <div class="md:mr-56"></div> <!-- I really don't like this, but that's okay -->
-        <main class="flex-1 md:max-w-3/5 md:mr-4 pt-8 md:pl-8 mx-4 md:mx-0 mt-8 md:mt-0 mb-4">
-            <div v-if="currentRoute.meta.heading" class="border-2 border-ctp-overlay0 p-4 mb-4">
-                <h1 v-if="currentRoute.meta.heading">{{ currentRoute.meta.heading }}</h1>
-                <span class="italic text-sm" v-if="currentRoute.meta.subheading">
-                    {{ currentRoute.meta.subheading }}
-                </span>
-                <div v-if="currentRoute.meta.wip" class="border-2 border-ctp-overlay0 bg-ctp-yellow/25 p-4 mt-2">
-                    <span>this page is currently work-in-progress. you may want to check back later!</span>
+    <div>
+        <div class="flex h-screen max-w-screen grow">
+            <SideNavigation />
+            <div class="md:mr-56"></div>
+            <!-- I really don't like this, but that's okay -->
+            <main class="flex-1 md:max-w-3/5 md:mr-4 md:pl-8 mx-4 md:mx-0 mt-8 pt-8 md:pt-0 mb-4">
+                <div v-if="currentRoute.meta.heading" class="border-2 border-ctp-overlay0 p-4 mb-4">
+                    <h1 v-if="currentRoute.meta.heading">
+                        {{ currentRoute.meta.heading }}
+                    </h1>
+                    <span class="italic text-sm" v-if="currentRoute.meta.subheading">
+                        {{ currentRoute.meta.subheading }}
+                    </span>
+                    <div v-if="currentRoute.meta.wip" class="border-2 border-ctp-overlay0 bg-ctp-yellow/25 p-4 mt-2">
+                        <span>this page is currently work-in-progress. you may
+                            want to check back later!</span>
+                    </div>
                 </div>
-            </div>
-            <router-view class="leading-8 text-justify mt-revert" />
-        </main>
+                <router-view class="leading-8 text-justify" />
+            </main>
+        </div>
     </div>
 </template>
 
@@ -38,7 +44,7 @@ div a.router-link-exact-active {
     text-decoration: solid underline;
 }
 
-div a.router-link-exact-active::before {
+div a.router-link-active::before {
     display: inline-block;
     content: "↗";
     animation: 0.3s ease-out anim-vertical-slide;
