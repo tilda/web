@@ -1,5 +1,6 @@
 <template>
-    <nav @nav-toggle="toggleMobileMenu"
+    <nav
+        @nav-toggle="toggleMobileMenu"
         class="flex fixed md:top-0 md:self-start flex-col drop-shadow-2xl justify-between mr-8 max-h-screen max-w-full w-screen md:w-auto backdrop-blur-sm">
         <div class="inline-flex items-center bg-ctp-crust min-h-12">
             <span class="text-sm text-ctp-mauve md:pt-8 pl-4 md:pl-8">tilda's abode</span>
@@ -22,9 +23,9 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
+import MobileMenu from '@/components/MobileMenu.vue'
 import ThemeSelector from '@/components/ThemeSelector.vue'
 import { useNavToggle } from '@/store'
-import MobileMenu from '@/components/MobileMenu.vue'
 
 let navToggle = useNavToggle()
 const router = useRouter()

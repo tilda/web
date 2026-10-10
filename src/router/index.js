@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import BlogPostView from '@/views/BlogPostView.vue'
 import BlogView from '@/views/BlogView.vue'
 import ContactView from '@/views/ContactView.vue'
 import HomeView from '@/views/HomeView.vue'
@@ -12,7 +13,7 @@ const routes = [
         meta: {
             heading: "hi, i'm tilda!",
             subheading:
-                'note: not my real name, although a lot of people tend to treat it as one.',
+                'note: not my real name, although a lot of people tend to treat it as one',
         },
     },
     {
@@ -21,8 +22,8 @@ const routes = [
         component: ProjectsView,
         meta: {
             heading: 'my projects',
-            subheading: 'for the most part, things i\'m proud of'
-        }
+            subheading: "for the most part, things i'm proud of",
+        },
     },
     {
         path: '/contact',
@@ -41,7 +42,14 @@ const routes = [
         meta: {
             heading: 'blog posts',
             subheading: 'customary various ramblings',
-            wip: true,
+            wip: true
+        },
+    },
+    {
+        path: '/blog/:slug',
+        component: BlogPostView,
+        meta: {
+            blogPost: true,
         },
     },
 ]
@@ -52,7 +60,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to) => {
-    const postTildeTitle = to.path !== '/' ? `/${to.name}` : ''
+    const postTildeTitle = to.path !== '/' ? to.path : ''
     document.title = `~${postTildeTitle}`
 })
 

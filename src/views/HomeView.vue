@@ -4,9 +4,8 @@
             welcome to my portfolio of sorts! for as long as i can remember, computers have been my favorite thing on
             the planet (having been basically born into them); my career's mission statement is making a net positive
             change in the world using my work.<br>
-            i'm currently pursuing an associate's in cybersecurity at
-            <a href="https://nctc.edu">North Central Texas College</a>, with an estimated graduation date in december
-            2026.
+            currently, i'm pursuing an associate's in cybersecurity from my local community college (estimated to
+            graduate in december 2026).
         </p>
         <h2>my favorite...</h2>
         <table class="indent-2">
@@ -41,7 +40,7 @@
         <p class="text-sm">
             *: Konami's arcade rhythm games. as of May 2026, i have played <i>beatmania IIDX</i>, <i>jubeat</i>,
             <i>pop'n music</i>, and <i>SOUND VOLTEX</i>. out of those four, <i>IIDX</i> remains my favorite.<br>
-            **: pretending they <em>aren't</em> gacha games!<br>
+            **: pretending they <em>aren't</em> gacha games, as that part is a little unfortunate<br>
             fun fact: i do not know japanese
         </p>
         <h2>hobbies</h2>
@@ -50,8 +49,8 @@
                 i cannot understate how much i like computers as a creative outlet. i think they're wonderful
                 things.<br>
                 my interest has been persistently kept in Linux system administration (desktop & server). i also enjoy
-                programming at some points - mostly in frontend, but i've done some stuff on the backend side too.
-                it's been a lot of fun!
+                programming at some points - mostly in frontend, but i've done some stuff on the backend side too. it's
+                been a lot of fun!
             </li>
             <li>
                 if you can't tell from the above favorites list, i'm a self-professed
@@ -63,6 +62,23 @@
                 in the future, i'd like to try things like amateur photography and (more) writing.<br>
                 other people doing them brought untold amounts of joy to me; i think it's only fair to give back at some
                 point!
+            </li>
+        </ol>
+        <h2>career</h2>
+        <ol class="list-disc">
+            <li>
+                currently, i don't hold formal experience in IT, so I am currently looking for <b>entry-level</b>
+                roles.<br>
+                <i>obligatory:</i> if you're scouting to fill a role and think i'd be a good fit: please <router-link
+                    to="/contact">get in touch!</router-link>
+            </li>
+            <li>
+                certifications i currently hold/plan to take:
+                <ol class="list-disc indent-4">
+                    <li><i>CompTIA Security+</i> (August 2025)</li>
+                    <li><i>CompTIA A+</i> (August 2026)</li>
+                    <li><i>CompTIA Network+</i> (in progress)</li>
+                </ol>
             </li>
         </ol>
     </div>
