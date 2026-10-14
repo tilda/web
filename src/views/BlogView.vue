@@ -15,8 +15,7 @@
             </span>
         </div>
         <div v-if="errorState" class="border-2 border-ctp-overlay0 bg-ctp-red/25 p-4">
-            couldn't retrieve post listing; <router-link to="/contact">please let me know!</router-link><br>
-            reported cause:
+            couldn't retrieve post listing; reported cause:
             <code>
                 {{ errorText }}
             </code>
@@ -41,6 +40,7 @@
 </template>
 
 <script setup>
+import { useBlogPaginationStore } from '@/store'
 import { ArrowUpRightIcon } from '@heroicons/vue/16/solid'
 import { readingTime } from '@tryghost/helpers'
 import { inject, reactive, ref, watch } from 'vue'
@@ -48,6 +48,7 @@ import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
 const router = useRouter()
+const store = useBlogPaginationStore()
 
 const cms = inject('cms')
 const postList = reactive({})
@@ -55,13 +56,15 @@ const listMeta = reactive({})
 const loading = ref(true)
 const errorState = ref(false)
 const errorText = ref('')
-const currentPage = ref(route.query.page ?? 1)
+const currentPage = ref(route.query.page || (store.page ?? 1))
 
 const prevPage = () => {
     currentPage.value = listMeta.value.pagination.prev
+    loadPosts()
 }
 const nextPage = () => {
     currentPage.value = listMeta.value.pagination.next
+    loadPosts()
 }
 const loadPosts = () => {
     cms.posts
@@ -79,13 +82,13 @@ const loadPosts = () => {
         })
 }
 
-loadPosts()
-
 watch(
     currentPage,
     (newPage) => {
         router.replace({ query: { ...route.query, page: newPage } })
-        loadPosts()
+        store.page = newPage
     }
 )
+
+loadPosts()
 </script>
