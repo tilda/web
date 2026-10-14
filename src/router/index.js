@@ -32,7 +32,6 @@ const routes = [
         meta: {
             heading: 'get in touch',
             subheading: "feel free to reach out - i'm always happy to chat!",
-            wip: true,
         },
     },
     {
@@ -42,7 +41,6 @@ const routes = [
         meta: {
             heading: 'blog posts',
             subheading: 'customary various ramblings',
-            wip: true
         },
     },
     {
