@@ -60,11 +60,9 @@ const currentPage = ref(route.query.page || (store.page ?? 1))
 
 const prevPage = () => {
     currentPage.value = listMeta.value.pagination.prev
-    loadPosts()
 }
 const nextPage = () => {
     currentPage.value = listMeta.value.pagination.next
-    loadPosts()
 }
 const loadPosts = () => {
     cms.posts
@@ -87,6 +85,7 @@ watch(
     (newPage) => {
         router.replace({ query: { ...route.query, page: newPage } })
         store.page = newPage
+        loadPosts()
     }
 )
 
