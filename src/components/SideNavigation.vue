@@ -1,8 +1,8 @@
 <template>
     <nav
         @nav-toggle="toggleMobileMenu"
-        class="flex fixed md:top-0 md:self-start flex-col drop-shadow-2xl justify-between mr-8 max-h-screen max-w-full w-screen md:w-auto backdrop-blur-sm">
-        <div class="inline-flex items-center bg-ctp-crust min-h-12">
+        class="flex fixed md:top-0 md:self-start flex-col justify-between mr-8 max-h-screen max-w-full w-screen md:w-auto backdrop-blur-sm">
+        <div :class="`inline-flex items-center ${navToggle.open ? 'bg-ctp-crust/50' : 'bg-ctp-crust'} min-h-12`">
             <span class="text-sm text-ctp-mauve md:pt-8 pl-4 md:pl-8">tilda's abode</span>
             <span class="mx-auto md:mx-0"></span>
             <MobileMenu />
