@@ -3,14 +3,15 @@
         <div class="border-2 border-ctp-overlay0 bg-ctp-blue-400/25 p-4 mb-4">
             <span v-if="loading">retrieving posts...</span>
             <span v-else-if="!loading && !errorState">
-                viewing page {{ currentPage }}/{{ listMeta.value.pagination.pages }}
-                &mdash;
-                <button type="button" class="underline cursor-pointer border px-1 mr-2" @click="prevPage" @keyup="prevPage" v-if="listMeta.value.pagination.prev">
-                    previous
-                </button>
-                <button type="button" class="underline cursor-pointer border px-1" @click="nextPage" @keyup="nextPage" v-if="listMeta.value.pagination.next">
-                    next
-                </button>
+                <span>viewing page {{ currentPage }}/{{ listMeta.value.pagination.pages }}</span>
+                <span class="float-right">
+                    <button type="button" :class="`underline ${listMeta.value.pagination.prev === null ? 'cursor-not-allowed text-ctp-subtext0/50' : 'cursor-pointer'} border px-1 mr-1`" @click="prevPage" @keyup="prevPage" :disabled="listMeta.value.pagination.prev === null">
+                        previous
+                    </button>
+                    <button type="button" :class="`underline ${listMeta.value.pagination.next === null ? 'cursor-not-allowed text-ctp-subtext0/50' : 'cursor-pointer'} border px-1`" @click="nextPage" @keyup="nextPage" :disabled="listMeta.value.pagination.next === null">
+                        next
+                    </button>
+                </span>
             </span>
         </div>
         <div v-if="errorState" class="border-2 border-ctp-overlay0 bg-ctp-red/25 p-4">
