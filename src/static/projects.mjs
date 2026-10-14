@@ -53,7 +53,6 @@ export default [
             'User Education'
         ],
         description: `my school had a program where students could occasionally take on technical projects for local small businesses. this happened to be one of them!
-        i worked with another student to create slideshows for basic security hygiene, plus a timeline to CIS Controls IG1 implementation in accordance with recent Texas law.
-        this organization does great things for the local community (especially people like myself), so i was very happy to help them out!`
+        i worked with another student to create slideshows for basic security hygiene, plus a timeline to CIS Controls IG1 implementation in accordance with recent Texas law.`
     }
 ]
