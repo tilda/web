@@ -65,11 +65,13 @@ const nextPage = () => {
     currentPage.value = listMeta.value.pagination.next
 }
 const loadPosts = () => {
+    loading.value = true
     cms.posts
         .browse({ limit: 5, page: currentPage.value })
         .then((res) => {
             postList.value = res
             listMeta.value = res.meta
+            store.page = currentPage.value
         })
         .catch((err) => {
             errorState.value = true
