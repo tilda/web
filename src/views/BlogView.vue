@@ -5,10 +5,14 @@
             <span v-else-if="!loading && !errorState">
                 <span>viewing page {{ currentPage }}/{{ listMeta.value.pagination.pages }}</span>
                 <span class="float-right">
-                    <button type="button" :class="`underline ${listMeta.value.pagination.prev === null ? 'cursor-not-allowed text-ctp-subtext0/50' : 'cursor-pointer'} border px-1 mr-1`" @click="prevPage" @keyup="prevPage" :disabled="listMeta.value.pagination.prev === null">
+                    <button type="button"
+                        :class="`underline ${listMeta.value.pagination.prev === null ? 'cursor-not-allowed text-ctp-subtext0/50' : 'cursor-pointer'} border px-1 mr-1`"
+                        @click="prevPage" @keyup="prevPage" :disabled="listMeta.value.pagination.prev === null">
                         previous
                     </button>
-                    <button type="button" :class="`underline ${listMeta.value.pagination.next === null ? 'cursor-not-allowed text-ctp-subtext0/50' : 'cursor-pointer'} border px-1`" @click="nextPage" @keyup="nextPage" :disabled="listMeta.value.pagination.next === null">
+                    <button type="button"
+                        :class="`underline ${listMeta.value.pagination.next === null ? 'cursor-not-allowed text-ctp-subtext0/50' : 'cursor-pointer'} border px-1`"
+                        @click="nextPage" @keyup="nextPage" :disabled="listMeta.value.pagination.next === null">
                         next
                     </button>
                 </span>
