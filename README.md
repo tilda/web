@@ -4,9 +4,14 @@ til.pm's 2nd iteration (as far as the domain is concerned).  Vue 3/Vite with vue
 
 ## Development
 
-Treat this as a normal project, no special setup should be required. This includes the Functions stuff as a Vite plugin takes care of that.
+The only real required step is adding an `.env` with the following variables for the blog tab to work:
+    - `VITE_GHOST_URL`
+    - `VITE_GHOST_CONTENT_KEY`
+    - `VITE_GHOST_VERSION`
 
-Basically: `npm i` into `vite` works. I use `npm run dev` based off my personal muscle memory, though.
+Setting up a dedicated Ghost instance for testing is not necessary. For demo instance details, see [Ghost Content API docs](https://docs.ghost.org/content-api/javascript#working-example).
+
+After that: `npm i`, and then `npm run dev` (or `vite`)
 
 ## License
 
