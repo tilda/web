@@ -74,3 +74,8 @@ h6::before {
 ol {
     list-style-position: inside;
 }
+
+hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
