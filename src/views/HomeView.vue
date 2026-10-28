@@ -4,7 +4,8 @@
             welcome to my portfolio of sorts! for as long as i can remember, computers have been my favorite thing on
             the planet (having been basically born into them); my career's mission statement is making a net positive
             change in the world using my work.<br>
-            currently, i'm pursuing an associate's in cybersecurity from <a href="https://nctc.edu">North Central Texas College</a> (estimated to
+            currently, i'm pursuing an associate's in cybersecurity from <a href="https://nctc.edu">North Central Texas
+                College</a> (estimated to
             graduate in december 2026).
         </p>
         <h2>my favorite...</h2>
@@ -69,15 +70,20 @@
             <li>
                 currently, i don't hold formal experience in IT, so I am currently looking for <b>entry-level</b>
                 roles.<br>
-                <i>obligatory:</i> if you're scouting to fill a role and think i'd be a good fit: please <router-link
-                    to="/contact">get in touch!</router-link>
+                if you're scouting to fill a role and think i'd be a good fit: please <router-link to="/contact">get in
+                    touch!</router-link>
             </li>
             <li>
-                certifications i currently hold/plan to take:
+                certifications i currently hold:
                 <ol class="list-disc indent-4">
                     <li><i>CompTIA Security+</i> (August 2025)</li>
                     <li><i>CompTIA A+</i> (August 2026)</li>
-                    <li><i>CompTIA Network+</i> (in progress)</li>
+                </ol>
+            </li>
+            <li>
+                certifications i am planning to take:
+                <ol class="list-disc indent-4">
+                    <li><i>CompTIA Network+</i> (voucher in hand, need to study!)</li>
                 </ol>
             </li>
         </ol>
