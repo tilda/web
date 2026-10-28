@@ -32,19 +32,6 @@ export default [
         // used <i> tag instead of */_ because markdown-it converts those to <em>
     },
     {
-        name: 'fluorite',
-        link: 'https://github.com/tilda/web',
-        date: 'June 2026',
-        skills: [
-            'JavaScript (Vue.js, Vite)',
-            'HTML/CSS (Tailwind CSS)',
-            'Netlify',
-        ],
-        description: `the website you're looking at; my first project with Vue 3 and Vite.
-        i wanted something that could really show who i am, which ended up being beyond the scope of the previous Vue 2 site.
-        it took over a year to gain the motivation to finally fulfill my vision. i'm very happy with it!`,
-    },
-    {
         name: 'Small Business Cybersecurity Program',
         date: 'July 2026 - August 2026',
         skills: [
@@ -54,5 +41,18 @@ export default [
         ],
         description: `my school had a program where students could occasionally take on technical projects for local small businesses. this happened to be one of them!
         i worked with another student to create slideshows for basic security hygiene, plus a timeline to CIS Controls IG1 implementation in accordance with recent Texas law.`
-    }
+    },
+    {
+        name: 'fluorite',
+        link: 'https://github.com/tilda/web',
+        date: 'May 2025 - October 2026',
+        skills: [
+            'JavaScript (Vue.js, Vite)',
+            'HTML/CSS (Tailwind CSS)',
+            'Netlify',
+        ],
+        description: `the website you're looking at; my first project with Vue 3 and Vite.
+        i wanted something that could really show who i am, which ended up being beyond the scope of the previous Vue 2 site.
+        it took a lot of time to fulfill my vision for the project, but i think it was well worth the struggle.`,
+    },
 ]
