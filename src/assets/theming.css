@@ -79,3 +79,14 @@ hr {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
+figcaption {
+    font-style: italic;
+}
+figure.kg-image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
