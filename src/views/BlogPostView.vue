@@ -9,7 +9,7 @@
                 {{ readingTime(post.value) }}
             </span>
         </div>
-        <router-link to="/blog"><span aria-hidden>←</span> go back to post listing</router-link>
+        <router-link to="/blog" ><span aria-hidden>←</span> go back to post listing</router-link>
         <div v-html="post.value.html"></div>
     </div>
 </template>
@@ -17,7 +17,7 @@
 <style scoped>
     div a.router-link-active::before {
         /* Prevent App.vue#L47 from taking effect here as it conflicts with the intended design on Back link */
-        content: "";
+        display: none;
     }
 </style>
 
