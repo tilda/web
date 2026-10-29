@@ -1,9 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, RouterView } from 'vue-router'
 import BlogPostView from '@/views/BlogPostView.vue'
 import BlogView from '@/views/BlogView.vue'
 import ContactView from '@/views/ContactView.vue'
 import HomeView from '@/views/HomeView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
+import BlogLayout from '@/views/BlogLayout.vue'
 
 const routes = [
     {
@@ -37,18 +38,23 @@ const routes = [
     {
         path: '/blog',
         name: 'blog',
-        component: BlogView,
+        component: BlogLayout,
         meta: {
             heading: 'blog posts',
             subheading: 'customary various ramblings',
         },
-    },
-    {
-        path: '/blog/:slug',
-        component: BlogPostView,
-        meta: {
-            blogPost: true,
-        },
+        children: [
+            {
+                path: '',
+                name: 'blog-list',
+                component: BlogView
+            },
+            {
+                path: ':slug',
+                name: 'blog-post',
+                component: BlogPostView
+            }
+        ]
     },
 ]
 

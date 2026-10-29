@@ -1,6 +1,5 @@
 <template>
     <div>
-        <router-link to="/blog"><span aria-hidden>←</span> go back to post listing</router-link>
         <div class="border-2 border-ctp-overlay0 p-4 my-4">
             <h1>{{ post.value.title }}</h1>
             <span class="italic text-sm">{{ post.value.custom_excerpt ? post.value.custom_excerpt : post.value.excerpt }}</span>
@@ -10,9 +9,17 @@
                 {{ readingTime(post.value) }}
             </span>
         </div>
+        <router-link to="/blog"><span aria-hidden>←</span> go back to post listing</router-link>
         <div v-html="post.value.html"></div>
     </div>
 </template>
+
+<style scoped>
+    div a.router-link-active::before {
+        /* Prevent App.vue#L47 from taking effect here as it conflicts with the intended design on Back link */
+        content: "";
+    }
+</style>
 
 <script setup>
 import { readingTime } from '@tryghost/helpers'
