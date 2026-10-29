@@ -3,10 +3,9 @@
         <!-- TODO: accomodate keyboard accessibility better i really dont like this? -->
         <button
             type="button"
-            :aria-readonly="themeStore.system"
             :title="`Current theme: ${themeStore.current} ${themeStore.system ? '(system theming)' : ''}`"
             :tabindex="themeStore.system ? '-1' : '0'"
-            :class="`size-12 md:size-6 pr-4 md:pr-0 inline-block ${themeStore.system ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`">
+            class="size-12 md:size-6 pr-4 md:pr-0 inline-block cursor-pointer">
             <MoonIcon
                 v-if="themeStore.current === 'macchiato'"
                 @click="themeStore.setLight"
@@ -20,9 +19,9 @@
             type="button"
             tabindex="0"
             class="text-sm md:text-xs italic block cursor-pointer"
+            v-if="!themeStore.system"
             @click="themeStore.toggleSystem">
-            (<span>{{ themeStore.system ? 'using' : 'overriding' }}</span>
-            system theming)
+            (overriding system theming)
         </button>
     </div>
 </template>

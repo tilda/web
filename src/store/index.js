@@ -24,13 +24,15 @@ export const useThemeSelector = defineStore('theme', {
             }
         },
         setLight() {
-            if (!this.system) {
-                this.current = 'latte'
+            this.current = 'latte'
+            if (this.system) {
+                this.system = false
             }
         },
         setDark() {
-            if (!this.system) {
-                this.current = 'macchiato'
+            this.current = 'macchiato'
+            if (this.system) {
+                this.system = false
             }
         },
     },
