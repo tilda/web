@@ -8,7 +8,7 @@
             <MobileMenu />
         </div>
         <div
-            :class="`${displayIfMobileMenuEnabled} flex flex-col pt-8 md:pt-4 px-8 h-screen w-screen md:w-56 bg-ctp-crust/50 md:bg-ctp-crust text-ctp-overlay1`">
+            :class="`${displayIfMobileMenuEnabled} flex flex-col pt-8 md:pt-4 px-8 h-screen w-screen md:w-56 bg-ctp-crust/50 md:bg-ctp-crust text-ctp-subtext0`">
             <ul class="font-bold text-4xl md:text-base">
                 <li class="pb-4 md:pb-0" v-for="route in router.options.routes" :key="route.name">
                     <router-link :to="route.path">{{ route.name }} </router-link>
