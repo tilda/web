@@ -25,7 +25,11 @@ a {
     text-decoration: revert;
 }
 .no-decoration {
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+a.no-nav-arrow::before {
+    display: none !important;
 }
 
 .mt-revert h1,
@@ -77,6 +81,7 @@ ol {
     list-style-position: inside;
 }
 
+/* For blog styling, mostly */
 hr {
     margin-top: 16px;
     margin-bottom: 16px;

@@ -3,7 +3,9 @@
         @nav-toggle="toggleMobileMenu"
         class="flex fixed md:top-0 md:self-start flex-col justify-between mr-8 max-h-screen max-w-full w-screen md:w-auto backdrop-blur-sm">
         <div :class="`inline-flex items-center ${navToggle.open ? 'bg-ctp-crust/50' : 'bg-ctp-crust'} min-h-12`">
-            <span class="text-sm bg-ctp-mauve text-ctp-base md:mt-8 ml-4 md:ml-8 p-1">tilda's abode</span>
+            <router-link to="/" class="text-sm bg-ctp-mauve text-ctp-base md:mt-8 ml-4 md:ml-8 p-1 no-nav-arrow no-decoration">
+                tilda's abode
+            </router-link>
             <span class="mx-auto md:mx-0"></span>
             <MobileMenu />
         </div>

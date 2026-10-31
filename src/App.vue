@@ -17,7 +17,7 @@
                             want to check back later!</span>
                     </div>
                 </div>
-                <router-view class="leading-8 text-justify" />
+                <router-view class="leading-8 text-justify pb-8" />
             </main>
         </div>
     </div>
