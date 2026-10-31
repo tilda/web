@@ -4,7 +4,7 @@
         <div v-if="!loading && !errored">
             <div class="border-2 border-ctp-overlay0 p-4 my-4">
                 <div>
-                    <router-link to="/blog">
+                    <router-link to="/blog" class="no-nav-arrow">
                         <StyledButton class="bg-ctp-surface0/50">
                             <span aria-hidden>←</span> go back to post listing
                         </StyledButton>
@@ -27,13 +27,6 @@
 
     </div>
 </template>
-
-<style scoped>
-div a.router-link-active::before {
-    /* Prevent styling from App.vue actually taking effect here, as it conflicts with the intended design on Back link */
-    display: none;
-}
-</style>
 
 <script setup>
 import LoadingIndicator from '@/components/LoadingIndicator.vue'

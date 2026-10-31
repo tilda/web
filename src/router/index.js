@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouterView } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import BlogPostView from '@/views/BlogPostView.vue'
 import BlogView from '@/views/BlogView.vue'
 import ContactView from '@/views/ContactView.vue'
