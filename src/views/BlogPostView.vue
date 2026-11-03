@@ -14,7 +14,7 @@
                     </span>
                 </div>
                 <h1 class="pt-2">{{ post.value.title }}</h1>
-                <span class="italic text-sm">{{ post.value.custom_excerpt ? post.value.custom_excerpt :
+                <span class="italic">{{ post.value.custom_excerpt ? post.value.custom_excerpt :
                     post.value.excerpt }}</span>
                 <br>
                 <span>
