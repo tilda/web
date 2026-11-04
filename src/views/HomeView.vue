@@ -5,7 +5,8 @@
             the planet (having been basically born into them); my career's mission statement is making a net positive
             change in the world using my work.<br>
             currently, i'm pursuing an associate's in cybersecurity from
-            <a href="https://nctc.edu">North Central Texas College</a> (estimated to graduate in december 2026).
+            <a href="https://nctc.edu">North Central Texas College</a>
+            (estimated to graduate in december 2026).
         </p>
         <h2>my favorite...</h2>
         <table class="indent-2">

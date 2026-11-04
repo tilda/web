@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import BlogLayout from '@/views/BlogLayout.vue'
 import BlogPostView from '@/views/BlogPostView.vue'
 import BlogView from '@/views/BlogView.vue'
 import ContactView from '@/views/ContactView.vue'
 import HomeView from '@/views/HomeView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
-import BlogLayout from '@/views/BlogLayout.vue'
 
 const routes = [
     {

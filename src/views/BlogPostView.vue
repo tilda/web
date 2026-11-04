@@ -19,8 +19,7 @@
                 </div>
                 <h1 class="pt-2">{{ post.value.title }}</h1>
                 <span class="italic">{{
-                    post.value.custom_excerpt ? post.value.custom_excerpt :
-                    post.value.excerpt
+                    post.value.custom_excerpt ? post.value.custom_excerpt : post.value.excerpt
                 }}</span>
                 <br>
                 <span>
@@ -34,11 +33,11 @@
 </template>
 
 <script setup>
-import LoadingIndicator from '@/components/LoadingIndicator.vue'
-import StyledButton from '@/components/StyledButton.vue'
 import { readingTime } from '@tryghost/helpers'
 import { inject, reactive, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import LoadingIndicator from '@/components/LoadingIndicator.vue'
+import StyledButton from '@/components/StyledButton.vue'
 
 const cms = inject('cms')
 const post = reactive({})

@@ -4,8 +4,12 @@
         <div v-if="!loading && !errored" class="border-2 border-ctp-overlay0 bg-ctp-blue-400/25 p-4 mb-4">
             <span>viewing page {{ currentPage }}/{{ listMeta.value.pagination.pages }}</span>
             <span class="float-right flex gap-1">
-                <StyledButton :disabled="listMeta.value.pagination.prev === null">previous</StyledButton>
-                <StyledButton :disabled="listMeta.value.pagination.next === null">next</StyledButton>
+                <StyledButton @click="prevPage" @keyup="prevPage" :disabled="listMeta.value.pagination.prev === null"
+                    >previous</StyledButton
+                >
+                <StyledButton @click="nextPage" @keyup="nextPage" :disabled="listMeta.value.pagination.next === null"
+                    >next</StyledButton
+                >
             </span>
         </div>
 
@@ -29,13 +33,13 @@
 </template>
 
 <script setup>
-import LoadingIndicator from '@/components/LoadingIndicator.vue'
-import StyledButton from '@/components/StyledButton.vue'
-import { useBlogPaginationStore } from '@/store'
 import { ArrowUpRightIcon } from '@heroicons/vue/16/solid'
 import { readingTime } from '@tryghost/helpers'
 import { inject, reactive, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import LoadingIndicator from '@/components/LoadingIndicator.vue'
+import StyledButton from '@/components/StyledButton.vue'
+import { useBlogPaginationStore } from '@/store'
 
 const route = useRoute()
 const router = useRouter()
