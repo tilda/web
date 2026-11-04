@@ -34,13 +34,9 @@ export default [
     {
         name: 'Small Business Cybersecurity Program',
         date: 'July 2026 - August 2026',
-        skills: [
-            'CIS Controls',
-            'Project Management',
-            'User Education'
-        ],
+        skills: ['CIS Controls', 'Project Management', 'User Education'],
         description: `my school had a program where students could occasionally take on technical projects for local small businesses. this happened to be one of them!
-        i worked with another student to create slideshows for basic security hygiene, plus a timeline to CIS Controls IG1 implementation in accordance with recent Texas law.`
+        i worked with another student to create slideshows for basic security hygiene, plus a timeline to CIS Controls IG1 implementation in accordance with recent Texas law.`,
     },
     {
         name: 'fluorite',

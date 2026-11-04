@@ -4,9 +4,8 @@
             welcome to my portfolio of sorts! for as long as i can remember, computers have been my favorite thing on
             the planet (having been basically born into them); my career's mission statement is making a net positive
             change in the world using my work.<br>
-            currently, i'm pursuing an associate's in cybersecurity from <a href="https://nctc.edu">North Central Texas
-                College</a> (estimated to
-            graduate in december 2026).
+            currently, i'm pursuing an associate's in cybersecurity from
+            <a href="https://nctc.edu">North Central Texas College</a> (estimated to graduate in december 2026).
         </p>
         <h2>my favorite...</h2>
         <table class="indent-2">
@@ -47,8 +46,7 @@
         <h2>hobbies</h2>
         <ol class="list-disc">
             <li>
-                i cannot understate how much i like computers as a creative outlet. i think they're wonderful
-                things.<br>
+                i cannot understate how much i like computers as a creative outlet. i think they're wonderful things.<br>
                 my interest has been persistently kept in Linux system administration (desktop & server). i also enjoy
                 programming at some points - mostly in frontend, but i've done some stuff on the backend side too. it's
                 been a lot of fun!
@@ -70,8 +68,8 @@
             <li>
                 currently, i don't hold formal experience in IT, so I am currently looking for <b>entry-level</b>
                 roles.<br>
-                if you're scouting to fill a role and think i'd be a good fit: please <router-link to="/contact">get in
-                    touch!</router-link>
+                if you're scouting to fill a role and think i'd be a good fit: please
+                <router-link to="/contact">get in touch!</router-link>
             </li>
             <li>
                 certifications i currently hold:

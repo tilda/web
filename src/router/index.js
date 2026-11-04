@@ -47,14 +47,14 @@ const routes = [
             {
                 path: '',
                 name: 'blog-list',
-                component: BlogView
+                component: BlogView,
             },
             {
                 path: ':slug',
                 name: 'blog-post',
-                component: BlogPostView
-            }
-        ]
+                component: BlogPostView,
+            },
+        ],
     },
 ]
 

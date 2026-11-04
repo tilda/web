@@ -1,8 +1,8 @@
 <template>
     <div>
-        have a question? usually, emailing <a href="mailto:me@til.pm">me@til.pm</a> will get you the best response<br/>
+        have a question? usually, emailing <a href="mailto:me@til.pm">me@til.pm</a> will get you the best response<br>
         for work-related inquiries: <a href="mailto:hireme@til.pm">hireme@til.pm</a>
-        <hr/>
+        <hr>
         otherwise, you can usually find me hanging around any of these:
         <ol>
             <li v-for="contact in contacts" :key="contact">

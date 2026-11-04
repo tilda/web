@@ -6,16 +6,22 @@
                 <div>
                     <router-link to="/blog" class="no-nav-arrow">
                         <StyledButton class="bg-ctp-surface0/50">
-                            <span aria-hidden>←</span> go back to post listing
+                            <span aria-hidden>←</span>
+                            go back to post listing
                         </StyledButton>
                     </router-link>
                     <span class="float-right">
-                        <StyledButton @click="copyLocation" :disabled="copied || clipboardFail">{{ copied ? 'link copied!' : 'share' }} {{ clipboardFail ? '(failed?)' : '' }}</StyledButton>
+                        <StyledButton @click="copyLocation" :disabled="copied || clipboardFail"
+                            >{{ copied ? 'link copied!' : 'share' }}
+                            {{ clipboardFail ? '(failed?)' : '' }}</StyledButton
+                        >
                     </span>
                 </div>
                 <h1 class="pt-2">{{ post.value.title }}</h1>
-                <span class="italic">{{ post.value.custom_excerpt ? post.value.custom_excerpt :
-                    post.value.excerpt }}</span>
+                <span class="italic">{{
+                    post.value.custom_excerpt ? post.value.custom_excerpt :
+                    post.value.excerpt
+                }}</span>
                 <br>
                 <span>
                     Published {{ new Date(post.value.published_at).toLocaleDateString() }} &mdash;
@@ -24,7 +30,6 @@
             </div>
             <div v-html="post.value.html"></div>
         </div>
-
     </div>
 </template>
 
@@ -45,24 +50,31 @@ let clipboardFail = ref(false)
 
 const copyLocation = () => {
     // timeout values here are vibes-based
-    navigator.clipboard.writeText(window.location.href).then(() => {
-        copied.value = true
-        setTimeout(() => {
-            copied.value = false
-        }, 2000)
-    }).catch(() => {
-        clipboardFail.value = true
-        setTimeout(() => {
-            clipboardFail.value = false
-        }, 5000)
-    })
+    navigator.clipboard
+        .writeText(window.location.href)
+        .then(() => {
+            copied.value = true
+            setTimeout(() => {
+                copied.value = false
+            }, 2000)
+        })
+        .catch(() => {
+            clipboardFail.value = true
+            setTimeout(() => {
+                clipboardFail.value = false
+            }, 5000)
+        })
 }
 
-cms.posts.read({ slug: route.params.slug }, { include: 'tags,authors' }).then((res) => {
-    post.value = res
-}).catch(() => {
-    errored.value = true
-}).finally(() => {
-    loading.value = false
-})
+cms.posts
+    .read({ slug: route.params.slug }, { include: 'tags,authors' })
+    .then((res) => {
+        post.value = res
+    })
+    .catch(() => {
+        errored.value = true
+    })
+    .finally(() => {
+        loading.value = false
+    })
 </script>

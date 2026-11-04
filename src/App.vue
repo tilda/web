@@ -13,8 +13,7 @@
                         {{ currentRoute.meta.subheading }}
                     </span>
                     <div v-if="currentRoute.meta.wip" class="border-2 border-ctp-overlay0 bg-ctp-yellow/25 p-4 mt-2">
-                        <span>this page is currently work-in-progress. you may
-                            want to check back later!</span>
+                        <span>this page is currently work-in-progress. you may want to check back later!</span>
                     </div>
                 </div>
                 <router-view class="leading-8 text-justify pb-8" />

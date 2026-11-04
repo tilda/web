@@ -50,5 +50,5 @@ export const useNavToggle = defineStore('navToggle', {
 
 export const useBlogPaginationStore = defineStore('blogPagination', {
     state: () => ({ page: 1 }),
-    persist: true
+    persist: true,
 })

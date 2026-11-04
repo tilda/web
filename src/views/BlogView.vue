@@ -10,7 +10,8 @@
         </div>
 
         <div v-for="post in postList.value" :key="post.id">
-            <router-link :to="`/blog/${post.slug}`"
+            <router-link
+                :to="`/blog/${post.slug}`"
                 class="border-2 border-ctp-overlay0 flex flex-row bg-ctp-crust/50 p-4 mb-4 hover:shadow-xl no-decoration">
                 <div>
                     <div class="text-2xl font-bold">{{ post.title }}</div>
@@ -70,14 +71,11 @@ const loadPosts = () => {
         })
 }
 
-watch(
-    currentPage,
-    (newPage) => {
-        router.replace({ query: { ...route.query, page: newPage } })
-        store.page = newPage
-        loadPosts()
-    }
-)
+watch(currentPage, (newPage) => {
+    router.replace({ query: { ...route.query, page: newPage } })
+    store.page = newPage
+    loadPosts()
+})
 
 loadPosts()
 </script>
