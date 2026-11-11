@@ -27,7 +27,7 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^2.5.14",
-        "@netlify/vite-plugin": "^2.11.3",
+        "@netlify/vite-plugin": "^3.0.1",
         "@tailwindcss/vite": "^4.2.2",
         "@vitejs/plugin-vue": "^6.0.5",
         "vite": "^8.0.8"
