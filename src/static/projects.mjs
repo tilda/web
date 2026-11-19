@@ -10,9 +10,9 @@ export default [
             'systemd',
             'Ubuntu',
         ],
-        description: `my first "serious" programming project, a Discord chatbot using the discord.py library. its purpose was enhancing conversations (somewhat) by bridging fun internet services like cat(girl) pictures into Discord.
-        it reached a peak of around 700 servers, following the maturity of discord.py itself as a project, before its forced demise due to Discord making many sweeping changes, including an "ID verification" program (which i could not do at the time).
-        i learned many managerial, operational, and technical lessons from this project - and it's also how i made quite a few friends.
+        description: `my first "serious" programming project: a Discord chatbot using the discord.py library. its purpose was enhancing conversations (somewhat) by bridging fun internet services like cat(girl) pictures into Discord.
+        it reached a peak of around 700 servers before its forced demise, due to platform changes by Discord (including an "ID verification" program which i could not do at the time).
+        i learned many lessons from this project - and it's also how i made quite a few friends.
         for all intents and purposes, it's the reason i'm the person you're currently seeing, even if the code was *really* bad.`,
     },
     {
@@ -26,17 +26,19 @@ export default [
             'OAuth2',
             'Project Management',
         ],
-        description: `one of the many things a "Beatmap Nominator" on <i>osu!</i> needs is a way to keep track of their duties. oftentimes, you'll get a Trello board or a notepad-style list somewhere.
+        description: `one of the many things a "Beatmap Nominator" on <i>osu!</i> needs is a way to keep track of their duties.
+        oftentimes, you'll get a Trello board or a notepad-style list somewhere.
         neither of those truly felt maintainable for me, so i went to automate a spreadsheet instead.
-        (much of this was influenced by [too](https://osu.ppy.sh/users/12196931), who did something similar when they were BN and led me down a rabbit hole)`,
+        <small>(much of this was influenced by [too](https://osu.ppy.sh/users/12196931), who did something similar when they were BN and led me down a rabbit hole)</small>`,
         // used <i> tag instead of */_ because markdown-it converts those to <em>
     },
     {
         name: 'Small Business Cybersecurity Program',
         date: 'July 2026 - August 2026',
         skills: ['CIS Controls', 'Project Management', 'User Education'],
-        description: `my school had a program where students could occasionally take on technical projects for local small businesses. this happened to be one of them!
-        i worked with another student to create slideshows for basic security hygiene, plus a timeline to CIS Controls IG1 implementation in accordance with recent Texas law.`,
+        description: `as part of NCTC's <i>CareerCircuit</i> program, students could be assigned to work on small business projects relevant to their major.
+        cybersecurity opportunities were reportedly few and far between, but i managed to land one to collaborate on with another student!
+        we created slideshows for basic security hygiene, and a timeline to CIS Controls IG1 implementation in accordance with recent Texas law.`,
     },
     {
         name: 'fluorite',
