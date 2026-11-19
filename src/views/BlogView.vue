@@ -21,7 +21,7 @@
                     <div class="text-2xl font-bold">{{ post.title }}</div>
                     <div>{{ post.custom_excerpt ? post.custom_excerpt : post.excerpt }}</div>
                     <div class="text-sm">
-                        Published {{ new Date(post.published_at).toLocaleDateString() }} &mdash; {{ readingTime(post) }}
+                        {{ tags(post, { prefix: 'Tagged ', suffix: ' &mdash;' }) }} Published {{ new Date(post.published_at).toLocaleDateString() }} &mdash; {{ readingTime(post) }}
                     </div>
                 </div>
                 <div class="ml-auto pl-8">
@@ -34,7 +34,7 @@
 
 <script setup>
 import { ArrowUpRightIcon } from '@heroicons/vue/16/solid'
-import { readingTime } from '@tryghost/helpers'
+import { readingTime, tags } from '@tryghost/helpers'
 import { inject, reactive, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import LoadingIndicator from '@/components/LoadingIndicator.vue'
@@ -61,7 +61,7 @@ const nextPage = () => {
 const loadPosts = () => {
     loading.value = true
     cms.posts
-        .browse({ limit: 5, page: currentPage.value })
+        .browse({ limit: 5, page: currentPage.value, include: 'tags' })
         .then((res) => {
             postList.value = res
             listMeta.value = res.meta
