@@ -4,7 +4,7 @@
             <SideNavigation />
             <div class="md:mr-56"></div>
             <!-- I really don't like this, but that's okay -->
-            <main class="flex-1 md:max-w-3/5 md:mr-4 md:pl-8 mx-4 md:mx-0 mt-8 pt-8 md:pt-0 mb-4">
+            <main class="flex-1 md:max-w-3/5 md:mr-4 md:pl-8 mx-4 md:mx-0 mt-8 pt-12 md:pt-0 mb-4">
                 <div v-if="currentRoute.meta.heading" class="border-2 border-ctp-overlay0 p-4 mb-4">
                     <h1 v-if="currentRoute.meta.heading">
                         {{ currentRoute.meta.heading }}

@@ -1,6 +1,6 @@
 <template>
     <span class="md:hidden sticky z-99">
-        <Bars2Icon @click="toggleMobileMenu" class="size-12 text-ctp-blue cursor-pointer pr-4" />
+        <Bars2Icon @click="toggleMobileMenu" class="size-12 text-ctp-mauve cursor-pointer pr-4" />
     </span>
 </template>
 
