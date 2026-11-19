@@ -16,7 +16,7 @@
                         <span>this page is currently work-in-progress. you may want to check back later!</span>
                     </div>
                 </div>
-                <router-view class="leading-8 text-justify pb-8" />
+                <router-view class="leading-8 pb-8" />
             </main>
         </div>
     </div>
