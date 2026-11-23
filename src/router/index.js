@@ -14,7 +14,7 @@ const routes = [
         meta: {
             heading: "hi, i'm tilda!",
             subheading:
-                'note: not my real name, although a lot of people tend to treat it as one',
+                'welcome to my portfolio site!',
         },
     },
     {

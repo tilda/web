@@ -1,13 +1,52 @@
 <template>
     <div>
         <p>
-            welcome to my portfolio of sorts! for as long as i can remember, computers have been my favorite thing on
+            i'm an early-career IT professional, pursuing an associate's in cybersecurity from
+            <a href="https://nctc.edu">North Central Texas College</a>
+            (estimated graduation in december 2026).
+            for as long as i can remember, computers have been my favorite thing on
             the planet (having been basically born into them); my career's mission statement is making a net positive
             change in the world using my work.<br>
-            currently, i'm pursuing an associate's in cybersecurity from
-            <a href="https://nctc.edu">North Central Texas College</a>
-            (estimated to graduate in december 2026).
+            <span class="text-sm">
+                note: considering i put this website on my resume, you might know me by a different name beginning with
+                "S."<br>
+                if you do... hi, and i hope you enjoy this side of me too!
+            </span>
         </p>
+        <h2>things i like working with</h2>
+        <ol class="list-disc">
+            <li>
+                <b>frontend design:</b> to me, working with frontend feels like getting into painting without actually
+                having to work with messy inks or clean up anything. seeing visual ideas come to life in the browser
+                feels magical at times. my current preferred framework: <a href="https://vuejs.org">Vue.js</a>!<br>
+                <span class="text-sm">
+                    this also had the downstream effect of making me enjoy actual design work at some points, in many
+                    forms of media -- not just on the screen
+                </span>
+            </li>
+            <li>
+                <b>linux systems:</b> i started working with linux at around nine years old (long story), fell in love
+                with it, and it hasn't left my brain since then. in that time period, i've worked to build on desktop
+                and server workloads on multiple distros -- diving into Debian, Fedora, SUSE, Ubuntu, and a few others.
+                i've maintained <abbr title="Arch User Repository">AUR</abbr> packages before, then built a little
+                homelab once, then moved on and built another one... the list goes on.
+            </li>
+            <li>
+                <b>my local community:</b> this is in another sense compared to the other two, but i love helping others
+                in my local community (and beyond) achieve their goals, using my own strengths! this is also part of my
+                belief in open-source software, being that many pieces of freely available code have helped me develop
+                my own skills into something real & valuable.
+            </li>
+        </ol>
+        <h2>hobbies</h2>
+        <ol class="list-disc">
+            <li><b>computers</b> (first and foremost)</li>
+            <li>anime, mainly slice of life</li>
+            <li>electronic music</li>
+            <li>non-fiction writing</li>
+            <li>occasional amateur photography</li>
+            <li>rhythm games</li>
+        </ol>
         <h2>my favorite...</h2>
         <table class="indent-2">
             <tbody>
@@ -44,27 +83,7 @@
             **: pretending they <em>aren't</em> gacha games, as that part is a little unfortunate<br>
             fun fact: i do not know japanese
         </p>
-        <h2>hobbies</h2>
-        <ol class="list-disc">
-            <li>
-                i cannot understate how much i like computers as a creative outlet. i think they're wonderful things.<br>
-                my interest has been persistently kept in Linux system administration (desktop & server). i also enjoy
-                programming at some points - mostly in frontend, but i've done some stuff on the backend side too. it's
-                been a lot of fun!
-            </li>
-            <li>
-                if you can't tell from the above favorites list, i'm a self-professed
-                <a href="https://en.wiktionary.org/wiki/weeaboo#English">weeb</a>.<br>
-                growing up, we didn't have cable tv. of course i still caught glimpses of spongebob episodes and such,
-                but the internet has... a lot of anime culture. i got used to it and stuck with it to this very day.
-            </li>
-            <li>
-                in the future, i'd like to try things like amateur photography and (more) writing.<br>
-                other people doing them brought untold amounts of joy to me; i think it's only fair to give back at some
-                point!
-            </li>
-        </ol>
-        <h2>career</h2>
+        <h2>my professional career</h2>
         <ol class="list-disc">
             <li>
                 currently, i don't hold formal experience in IT, so I am currently looking for <b>entry-level</b>
