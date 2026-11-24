@@ -47,7 +47,6 @@ export default [
         skills: [
             'JavaScript (Vue.js, Vite)',
             'HTML/CSS (Tailwind CSS)',
-            'Netlify',
         ],
         description: `the website you're looking at; my first project with Vue 3 and Vite.
         i wanted something that could really show who i am, which ended up being beyond the scope of the previous Vue 2 site.
